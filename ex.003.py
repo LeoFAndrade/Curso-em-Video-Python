@@ -1,4 +1,2 @@
 n = input('Digite qualquer coisa')
-print(n.isnumeric()), (n.isalpha()), (n.isalnum())
-
-
+print('Tipo primitivo;', type(n)), print('É numérico ?', n.isnumeric()), print('É alfabético ?', n.isalpha())
