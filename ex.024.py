@@ -1,0 +1,7 @@
+fr = input('Digite uma frase:').lower().strip()
+frase = fr.count('a')
+letra1 = fr.index('a')
+letra2 = fr.rindex('a')
+print(f'A sua frase tem: {frase} letras "a"')
+print(f'a primeira letra "a" aparece primeiro na str: {letra1}')
+print(f'E a ultima letra aparece na str: {letra2}')
