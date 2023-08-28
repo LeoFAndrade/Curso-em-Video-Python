@@ -1,6 +1,9 @@
 numero = int(input('Digite um número qualquer:'))
-divisao = [int(x) for x in str(numero)]
-print(f'A unidade do número é: {divisao[-1]}')
-print(f'A dezena do número  é: {divisao[-2]}')
-print(f'A centena do número é: {divisao[-3]}')
-print(f'A milhar do número  é: {divisao[-4]}')
+u = numero//1 % 10
+d = numero//10 % 10
+c = numero//100 % 10
+m = numero//1000 % 10
+print(f'A unidade do número é: {u}')
+print(f'A dezena do número é: {d}')
+print(f'A centena do número é: {c}')
+print(f'A milhar do número é: {m}')
