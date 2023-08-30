@@ -6,6 +6,6 @@ listanum = [0, 1, 2, 3, 4, 5]
 PC = random.choice(listanum)
 print(f'{PC}')
 if numero == PC:
-    print('Você acertou!')
+    print('Droga, você acertou!')
 else:
-    print('Você errou!')
+    print('Você errou, eu ganhei! kkkk')
