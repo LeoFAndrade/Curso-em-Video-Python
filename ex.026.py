@@ -9,3 +9,4 @@ if numero == PC:
     print('Droga, você acertou!')
 else:
     print('Você errou, eu ganhei! kkkk')
+# Consegui fazer sem muita ajuda kkkkkk tô feliz demais kkkkkk Dia: 30/08/2023 h:18:00 +-
