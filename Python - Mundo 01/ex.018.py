@@ -1,5 +1,5 @@
 import random
-
+# O programa vai escolher randomicamente o aluno.
 nome1 = input('Primeiro aluno:')
 nome2 = input('Segundo aluno:')
 nome3 = input('Terceiro aluno:')
