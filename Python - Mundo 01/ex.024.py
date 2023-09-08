@@ -1,4 +1,5 @@
 fr = input('Digite uma frase:').lower().strip()
+# Uma aplicação simples para analisar certas características sobre uma frase.
 frase = fr.count('a')
 letraA1 = fr.index('a')
 letraA2 = fr.rindex('a')
