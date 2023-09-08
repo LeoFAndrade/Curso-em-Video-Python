@@ -1,2 +1,2 @@
-cidade = input('Digite o nome da cidade:').lower()
-print(cidade.strip().startswith("santo"))
+cidade = input('Digite o nome da cidade:').strip().lower()
+print(cidade.startswith("santo"))
