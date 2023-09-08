@@ -1,5 +1,5 @@
 from random import shuffle
-
+# O programa organiza aleatoriamente os nomes em uma lista.
 nome1 = input('Primeiro aluno:')
 nome2 = input('Segundo aluno:')
 nome3 = input('Terceiro aluno:')
