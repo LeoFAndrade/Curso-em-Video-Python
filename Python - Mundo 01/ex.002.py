@@ -1,3 +1,3 @@
-n1 = int(input('Digite um número:'))
-n2 = int(input('Digite outro número:'))
-print(f'a soma de {n1} + {n2} = {n1+n2}')
+n1 = int(input('\033[32mDigite um número:'))
+n2 = int(input('\033[32mDigite outro número:'))
+print(f'\033[32mA soma de \033[33m{n1} + {n2}\033[33m =\033[31m {n1+n2}')
