@@ -1,12 +1,14 @@
-import enquiries
 numero = int(input('Digite um número inteiro:'))
-print('Escolha qual a conversão desejada:')
-print('-1: para binário'), print('-2: para octal '), print('-3: para hexadecimal')
-lista = ['1', '2', '3']
-escolha = enquiries.choose('Digite a sua escolha', lista)
-if escolha == 1:
+print('Escolha uma das bases de conversão:')
+escolha = input('[ 1 ] Converter para BINÁRIO | [ 2 ] Converter para OCTAL | [ 3 ] Converter para HEXADECIMAL')
+if escolha == '1':
     print(f'O seu número ficará assim: {bin(numero)}')
-elif escolha == 2:
+    end = ''
+elif escolha == '2':
     print(f'O seu número ficará assim: {oct(numero)}')
-elif escolha == 3:
+    end = ''
+elif escolha == '3':
     print(f'O seu número ficará assim: {hex(numero)}')
+    end = ''
+else:
+    input('[ 1 ] Converter para BINÁRIO | [ 2 ] Converter para OCTAL | [ 3 ] Converter para HEXADECIMAL')
