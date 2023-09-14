@@ -9,6 +9,5 @@ if r3 and r2 > r1:
     maior = r3
 if r1 and r3 > r2:
     print('É possível formar um triângulo com estas retas')
-# Aqui o programa vai analisar se duas retas.
 else:
     print('Não é possível formar um triângulo com estas retas')
