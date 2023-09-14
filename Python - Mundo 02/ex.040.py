@@ -1,6 +1,6 @@
 # Exercício Python 042: Refaça o DESAFIO 035 dos triângulos, acrescentando o
 # recurso de mostrar que tipo de triângulo será formado:
-print('\033[32m-=-' * 20), print('Analisador de triângulo 2.0}'), print('-=-' * 20, '\033[m')
+print('\033[32m-=-' * 20), print('Analisador de triângulo 2.0'), print('-=-' * 20, '\033[m')
 azul = '\033[34m'
 x = '\033[m'
 
