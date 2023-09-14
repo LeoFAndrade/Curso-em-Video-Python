@@ -5,7 +5,6 @@ data = int(input('Digite a data de nascimento:'))
 idade = atual - data
 saldo = 18 - idade
 print(f'Quem nasceu em \033[34m{data}\033[m, tem \033[34m{idade} anos')
-
 if idade == 18:
     print('\033[33mÉ hora de se alistar.')
 elif idade < 18:
@@ -16,4 +15,4 @@ elif idade > 18:
     print('\033[31mJá passou da hora se alistar.')
     saldo = idade - 18
     anos = atual - saldo
-    print(f'Seu alistamento deveria ter sido no ano de {anos}')
+    print(f'\033[31mSeu alistamento deveria ter sido no ano de {anos}')
