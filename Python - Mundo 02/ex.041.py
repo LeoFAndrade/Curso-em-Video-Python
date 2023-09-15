@@ -2,7 +2,7 @@
 # calcule seu Índice de Massa Corporal (IMC) e mostre sua classificação,
 # conforme a tabela abaixo:
 
-print('\033[32m-=-' * 20), print('Calculador de IMC'), print('-=-' * 20, '\033[m')
+print('\033[32m-=-' * 20), print('\033[33mCalculador de IMC\033[m'), print('\033[32m-=-' * 20, '\033[m')
 
 altura = float(input('Digite a altura: (m)'))
 peso = float(input('Digite o peso: (Kg)'))
