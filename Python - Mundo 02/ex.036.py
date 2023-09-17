@@ -1,3 +1,6 @@
+# Exercício Python 038: Escreva um programa que leia dois números inteiros e
+# compare-os. Mostrando uma mensagem na tela:
+
 num1 = int(input('Digite um número:'))
 num2 = int(input('Digite o segundo número:'))
 if num1 > num2:
