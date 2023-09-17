@@ -13,7 +13,7 @@ atual = date.today().year
 data = int(input('Digite a data de nascimento:'))
 idade = atual - data
 saldo = 18 - idade
-# Estabelecendo condições para o alistamento conforme a data de nascimentos apresentada
+# Classificando o alistante conforme a idade apresentada
 print(f'Quem nasceu em \033[34m{data}\033[m, tem \033[34m{idade} anos')
 if idade == 18:
     print('\033[33mÉ hora de se alistar.')
