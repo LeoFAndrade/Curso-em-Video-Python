@@ -8,4 +8,5 @@ for x in range(0, 501):  # Os números vão de 0 a 500
         if x % 3 == 0:  # A mesma coisa acima, porém usando para obter os números ímpares múltiplos de 3
             soma += x
             contador += +1
-print(f'A soma de todos os números é: {soma}\nO número de vezes que foi contado é {contador}')
+print(f'A soma de todos os números ímpares divisíveis por três é:'
+      f' {soma}, O número de vezes que foi contado é {contador}')
