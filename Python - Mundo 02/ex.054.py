@@ -7,7 +7,6 @@ soma = 0
 media = 0
 maior = 0
 nome1 = ''
-itens = ['masculino', 'feminino']
 for x in range(1, 5):
     nome = input(f'Digite o nome da {x}ª pessoa: ')
     idade = int(input(f'Digite a idade {x}ª pessoa: '))
