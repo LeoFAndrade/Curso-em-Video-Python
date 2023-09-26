@@ -6,3 +6,4 @@ if pali == pali[::-1]:  # Aqui reverterá a frase para analisar se é igual ou n
     print(f'A palavra {pali} é palíndromo')
 else:
     print(f'A palavra {pali} não é palíndromo')
+print(f'A palavra ao contrário fica assim: {pali[::-1]}')
