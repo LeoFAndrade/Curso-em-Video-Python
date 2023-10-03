@@ -7,13 +7,15 @@
 
 cont = soma = 0  # Variável que vai agir como um operando
 
-num = int(input('Digite um número (999 para parar): '))  # Aqui o programa vai pegar a entrada do usuário
+flag = 999  # flag
+count = 0  # Contador que vai agir simultaneamente como operando
 
-while num != 999:  # Enquanto o contador diferir de -1, o programa vai rodar
-    soma += num  # Somando os termos
-    cont += 1  # Contador vai adicionar +1
-    num = int(input('Digite um número (999 para parar): '))  # Caso 999 seja digitado, ele é automaticamente rejeitado
-    # da soma
+while count != -1:  # Enquanto o contador diferir de -1, o programa vai rodar
 
-    if num == 999:  # Se o usuário digitar 999, a condição é cumprida e imprime a mensagem abaixo
-        print(f'Você digitou {cont} vezes, a soma total é de: {soma}')  # Com a condição cumprida é exibido a soma
+    num = int(input('Digite um número (999 para parar): '))  # O programa só vai parar de perguntar se for digitado 999
+    soma = count + num  # Somando os termos
+    count = soma  # Transformando o contador para se tornar a soma
+
+    if num == 999:  # Se o usuário digitar 999, a condição é cumprida
+        print(f'A soma de todos os números exceto 999 é: {soma-flag}')  # Com a condição cumprida é exibido a soma
+        break
