@@ -3,19 +3,17 @@
 # No final, mostre quantos números foram digitados e qual foi a soma entre eles
 # (Desconsiderando a flag)
 
-# Escrevi a minha própria versão e funcionava perfeitamente, mas acabou que a do professor era melhor. 31/10/2023
-
-cont = soma = 0  # Variável que vai agir como um operando
 
 flag = 999  # flag
-count = 0  # Contador que vai agir simultaneamente como operando
+cont = soma = 0   # Variável que vai agir como um operando
 
-while count != -1:  # Enquanto o contador diferir de -1, o programa vai rodar
 
-    num = int(input('Digite um número (999 para parar): '))  # O programa só vai parar de perguntar se for digitado 999
-    soma = count + num  # Somando os termos
-    count = soma  # Transformando o contador para se tornar a soma
-
+num = int(input('Digite um número (999 para parar): '))
+while num != 999:  # Enquanto o contador diferir de -1, o programa vai rodar
+    soma += num  # Somando os termos
+    num = soma  # Transformando o contador para se tornar a soma
+    cont += 1
+    num = int(input('Digite um número (999 para parar): '))
     if num == 999:  # Se o usuário digitar 999, a condição é cumprida
-        print(f'A soma de todos os números exceto 999 é: {soma-flag}')  # Com a condição cumprida é exibido a soma
-        break
+        print(f'Você digitou {cont} vezes, a soma total é de: {soma}')  # Com a condição cumprida é exibido a soma
+
