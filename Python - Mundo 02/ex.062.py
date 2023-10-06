@@ -16,4 +16,3 @@ while num != 999:  # Enquanto o contador diferir de -1, o programa vai rodar
     num = int(input('Digite um número (999 para parar): '))
     if num == 999:  # Se o usuário digitar 999, a condição é cumprida
         print(f'Você digitou {cont} vezes, a soma total é de: {soma}')  # Com a condição cumprida é exibido a soma
-
