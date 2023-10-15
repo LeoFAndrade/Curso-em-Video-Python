@@ -1,4 +1,4 @@
-# Exercício 72: Crie um programa que tenha uma tupla totalmente preenchida com uma contagem por extenso, de zero até
+# Exercício 072: Crie um programa que tenha uma tupla totalmente preenchida com uma contagem por extenso, de zero até
 # vinte. Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostrá-lo por extenso.
 
 extenso = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez',
