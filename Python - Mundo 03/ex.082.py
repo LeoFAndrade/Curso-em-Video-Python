@@ -3,10 +3,10 @@
 # B) Uma listagem com as pessoas mais pesadas.
 # C) Uma listagem com as pessoas mais leves.
 
-lista = []
-dados = []
-maior = menor = count = 0
-
+lista = dados = []
+maior = menor = 0
+count = 0
+pesomaior = pesomenor = ''
 while True:
     dados.append(input('Digite o nome da pessoa: '))
     dados.append(int(input('Digite o peso da pessoa: ')))
@@ -17,18 +17,19 @@ while True:
         if len(dados) == 0:
             maior = menor = dados[1]
         else:
-            if dados[1] > maior:
+            if dados[1] >= maior:
                 maior = dados[1]
-            if dados[1] < maior:
+                pesomaior = dados[0]
+            if dados[1] <= maior:
                 menor = dados[1]
-    dados.clear()
+                pesomenor = dados[0]
+        dados.clear()
     resp = input('Deseja continuar ? [S/N]: ').upper()
     count += 1
-
-    dados.clear()
-
     if resp in 'N':
         break
 print(f'O total de pessoas cadastradas foram: {count}')
-print(f'As pessoas de maior peso são: {maior}')
-print(f'As pessoas de menor peso são: {menor}')
+print(f'O maior peso registrado foi de: {maior}KG')
+print(f'A pessoa de maior peso é: {pesomaior}')
+print(f'O menor peso registrado foi de: {menor}KG')
+print(f'A pessoa de menor peso é: {pesomenor}')
