@@ -5,8 +5,11 @@ aluno = {}
 
 aluno['Nome'] = str(input('Digite o nome do aluno: '))
 aluno['Média'] = float(input(f'Média de {aluno["Nome"]}: '))
-print(f'O Nome é {"Nome"}\nA Média é {"Média"}')
+print(f'O Nome é {aluno["Nome"]}\nA Média é {aluno["Média"]}')
+
 if aluno['Média'] >= 7:
-    print('Situação é igual a Aprovado')
+    print('Situação é igual a \033[1mAprovado')
+elif aluno['Média'] <= 5 < 7:
+    print('Situação é igual a \033[1mRecuperação')
 else:
-    print('Situação é igual a Reprovado')
+    print('Situação é igual a \033[1mReprovado')
