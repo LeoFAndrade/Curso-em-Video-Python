@@ -9,7 +9,7 @@ print(f'O Nome é {aluno["Nome"]}\nA Média é {aluno["Média"]}')
 
 if aluno['Média'] >= 7:
     print('Situação é igual a \033[1mAprovado')
-elif aluno['Média'] <= 5 < 7:
+elif 5 <= aluno['Média'] < 7:
     print('Situação é igual a \033[1mRecuperação')
 else:
     print('Situação é igual a \033[1mReprovado')
