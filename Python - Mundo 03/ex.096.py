@@ -10,6 +10,10 @@ from time import sleep
 
 def contador(inicio, fim, passo):  # O contador vai ter três paramêtros, um serve de início da contagem, o outro fim, e
     # o passo que vai ditar de quanto em quanto deve se contar
+    if passo < 0:
+        passo *= -1
+    if passo == 0:
+        passo = 1
     if inicio <= fim:  # Se i início for menor que o fim, a contagem segue um ritmo regular
         cont = inicio  # O inicio vai ser a contagem
         while cont <= fim:  # Até a contagem não for igual a fim, o programa vai continuar contando
