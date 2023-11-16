@@ -1,5 +1,5 @@
-# Faça um programa que tenha uma função chamada contador(), que receba três parâmetros:início, fim e passo e realize a
-# contagem.
+# Exercício 098: Faça um programa que tenha uma função chamada contador(), que receba três parâmetros: início, fim e
+# passo e realize a contagem.
 # Seu programa tem que realizar três contagens através da função criada:
 # a) De 1 até 10, de 1 em 1
 # b) De 10 até 0, de 2 em 2
@@ -10,9 +10,9 @@ from time import sleep
 
 def contador(inicio, fim, passo):  # O contador vai ter três paramêtros, um serve de início da contagem, o outro fim, e
     # o passo que vai ditar de quanto em quanto deve se contar
-    if passo < 0:
+    if passo < 0:  # Se o passo for menor que 0, o passo se tornará "positivo"
         passo *= -1
-    if passo == 0:
+    if passo == 0:  # Se o passo for igual à 0, o passo se torna 1
         passo = 1
     if inicio <= fim:  # Se i início for menor que o fim, a contagem segue um ritmo regular
         cont = inicio  # O inicio vai ser a contagem
