@@ -27,7 +27,11 @@ def contador(inicio, fim, passo):  # O contador vai ter três paramêtros, um se
         print('FIM')
 
 
+print('-=-' * 10)
 contador(1, 10, 1)
+print('-=-' * 10)
 contador(10, 0, 2)
+print('-=-' * 10)
 contador(inicio=int(input('\nDigite o inicio: ')), fim=int(input('Digite o fim: ')),
          passo=int(input('Digite o passo: ')))
+print('-=-' * 10)
