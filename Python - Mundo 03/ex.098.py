@@ -6,6 +6,7 @@ from random import randint
 from time import sleep
 numeros = list()
 
+
 def sorteia(lista):
     for contador in range(0, 5):
         n = randint(0, 10)
