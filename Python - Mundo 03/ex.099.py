@@ -4,12 +4,9 @@
 
 from datetime import datetime
 
-datanasc = int(input('Digite o ano em que nasceu: '))
-idade = datetime.now().year - datanasc
-
 
 def voto(data):
-    idade = data
+    idade = datetime.now().year - data
     if 18 <= idade <= 70:
         return f'Com {idade} anos: O VOTO É OBRIGATÓRIO'
 
@@ -21,4 +18,4 @@ def voto(data):
     return idade
 
 
-print(voto(idade))
+print(voto(int(input('Digite o ano de nascimento: '))))
