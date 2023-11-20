@@ -6,6 +6,7 @@ def ficha(jog='', gol=0):
     print(f'O Jogador {jog} fez {gol} gol(s) no campeonato!')
 
 
+# Programa Principal
 nome = str(input('Nome do Jogador: ')).strip()
 gols = str(input('Números de Gols: '))
 if gols.isnumeric():
