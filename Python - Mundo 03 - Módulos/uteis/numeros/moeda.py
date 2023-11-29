@@ -1,22 +1,35 @@
-def metade(numero):
-    n = numero // 2
-    return n
 
-
-def aumentar(num, pc):
+def aumentar(num, pc, sit=False):
     num += num * pc / 100
-    return num
+    if sit:
+        return moeda(num)
+    else:
+        return num
 
 
-def diminuir(num, pc):
+def diminuir(num, pc, sit=False):
     num -= num * pc / 100
-    return num
+    if sit:
+        return moeda(num)
+    else:
+        return num
 
 
-def dobro(num):
-    return num * 2
+def metade(numero, sit=False):
+    num = numero // 2
+    if sit:
+        return moeda(num)
+    else:
+        return num
+
+
+def dobro(num, sit=False):
+    if sit:
+        return moeda(num)
+    else:
+        return num
 
 
 def moeda(num):
-    num = f'R${num:,.2f}'
-    return num
+    n = f'R${num:,.2f}'
+    return n
