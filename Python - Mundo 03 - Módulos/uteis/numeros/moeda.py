@@ -1,63 +1,58 @@
-# noinspection NonAsciiCharacters,PyArgumentList
-def resumo(preço, mais, menos):
-    # noinspection PyArgumentList
-    mais = int
-    menos = int
-    print('~~~' * 20)
-    print('Resumo do Valor')
-    print('~~~' * 20)
-    print(f'Preço analisado    {preço}')
-    print(f'Dobro do preço:    {dobro(preço), True}')
-    print(f'Metade do preço:    {metade(preço, True)}')
-    print(f'{mais}% de aumento: {aumentar(preço, mais, True)}')
-    print(f'{menos}% de redução {diminuir(preço, menos, True)}')
-
-
-na = float(input('Digite um número'))
-print(resumo(na, 50, 10))
-
-
 # noinspection NonAsciiCharacters
-def aumentar(preço=0, taxa=0, sit=False):
-    """"→ Adiciona o valor da porcentagem sobre um número"""
+def aumentar(preço=0, taxa=0, forma=False):
+    """"→ Calcula o aumento de um determinado preço,
+     retornando o resultado com formatação opcional
+    :param preço: O preço/valor que se quer reajustar
+    :param taxa: A porcentagem da adição
+    :param forma: A formatação em forma monetária"""
     resp = preço + (preço * taxa / 100)
-    if sit:
-        return moeda(resp)
-    else:
-        return resp
+    return resp if forma is False else moeda(resp)
 
 
 # noinspection NonAsciiCharacters
-def diminuir(preço=0, taxa=0, sit=False):
-    """"→ Subtrai o valor da porcentagem sobre um número"""
+def diminuir(preço=0, taxa=0, forma=False):
+    """"→ Calcula a diminuição de um determinado preço,
+    retornado o resultado com formatação opcional
+    :param preço: O preço/valor que se quer reajustar
+    :param taxa: A porcentagem da subtração
+    :param forma: A formatação em forma monetária"""
     resp = preço + (preço * taxa / 100)
-    if sit:
-        return moeda(resp)
-    else:
-        return resp
+    return resp if forma is False else moeda(resp)
 
 
 # noinspection NonAsciiCharacters
-def metade(preço, sit=False):
-    """"→ Calcula a metade de um número."""
+def metade(preço=0, forma=False):
+    """"→ Calcula a metade de um número.
+    :param preço: O preço/valor que se quer reajustar
+    :param forma: A formatação em forma monetária"""
     resp = preço // 2
-    if sit:
-        return moeda(resp)
-    else:
-        return resp
+    return resp if forma is False else moeda(resp)
 
 
 # noinspection NonAsciiCharacters
-def dobro(preço, sit=False):
-    """"→ Calcula o dobro de um número."""
+def dobro(preço=0, forma=False):
+    """"→ Calcula o dobro de um número.
+    :param preço: O preço/valor que se quer reajustar
+    :param forma: A formatação em forma monetária"""
     resp = preço * 2
-    if sit:
-        return moeda(resp)
-    else:
-        return resp
+    return resp if forma is False else moeda(resp)
 
 
-def moeda(num):
-    """"→ Retorna uma str formatada em forma monetária."""
-    n = f'R${num:,.2f}'
-    return n
+def moeda(preço, monetário='R$'):
+    """"→ Retorna uma str formatada em forma monetária.
+    :param preço: O preço/valor que será formatado
+    :param monetário: O str em forma monetária"""
+    return f'{monetário}{preço:>.2f}'.replace('.', ',')
+
+
+def resumo(preço, mais=int(), menos=int()):
+    # noinspection PyArgumentList
+    print('~~~' * 20)
+    print('Resumo do Valor'.center(60))
+    print('~~~' * 20)
+    print(f'Preço analisado:    R${preço}')
+    print(f'Dobro do preço:  \t{dobro(preço, True)}')
+    print(f'Metade do preço: \t{metade(preço, True)}')
+    print(f'{mais}% de aumento:  \t{aumentar(preço, mais, True)}')
+    print(f'{menos}% de redução:  \t{diminuir(preço, menos, True)}')
+    print('~~~' * 20)
