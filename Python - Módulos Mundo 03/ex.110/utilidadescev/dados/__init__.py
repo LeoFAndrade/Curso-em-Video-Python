@@ -1,3 +1,4 @@
+
 def leiaDinheiro(msg):
     while True:
         valor = input(msg).replace(',', '.')
@@ -5,6 +6,8 @@ def leiaDinheiro(msg):
             return float(valor)
         else:
             print('\033[1;31mValor inválido. Digite um valor monetário válido.\033[m')
+
+
 
 
 def leiaInt(número):

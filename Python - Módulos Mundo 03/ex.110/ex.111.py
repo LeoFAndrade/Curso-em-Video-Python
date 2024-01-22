@@ -1,7 +1,7 @@
 # Exercício 113: Reescreva a função leiaInt() que fizemos no desafio 104, incluindo agora a possibilidade da digitação
 # de um número de tipo inválido. Aproveite e crie também uma função leiaFloat() coma a mesma funcionalidade.
 
-def leiInt(msg):
+def leiaInt(msg):
     while True:
         try:
             número = int(input(msg))
@@ -17,7 +17,7 @@ def leiInt(msg):
             return número
 
 
-def leiFloat(msg):
+def leiaFloat(msg):
     while True:
         try:
             num = float(input(msg))
@@ -33,5 +33,7 @@ def leiFloat(msg):
             return num
 
 
-b = leiFloat('Digite um número: ')
+a = leiaInt('Digite um número inteiro: ')
+print(a)
+b = leiaFloat('Digite um número real: ')
 print(b)
