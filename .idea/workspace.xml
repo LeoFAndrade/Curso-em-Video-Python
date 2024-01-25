@@ -7,14 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5bace40-23a9-4dc0-8364-e99998914881" name="Changes" comment="Exercício 114 completo.">
-      <change afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/ex.113.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Arquivo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/__init__.py" afterDir="false" />
+    <list default="true" id="e5bace40-23a9-4dc0-8364-e99998914881" name="Changes" comment="Exercícios parcialmente feitos">
+      <change afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Sistema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Tabela" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.109/ex/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.111.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.111.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/ex.113.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/ex.113.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Arquivo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Interface.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +79,9 @@
     "Python.Arquivo.executor": "Run",
     "Python.Interface.executor": "Run",
     "Python.__init__.executor": "Run",
+    "Python.ex.089.executor": "Run",
+    "Python.ex.090.executor": "Run",
+    "Python.ex.091.executor": "Run",
     "Python.ex.102.executor": "Run",
     "Python.ex.106.executor": "Run",
     "Python.ex.109.executor": "Run",
@@ -91,7 +93,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/famil/Documents/Projetos/Repositorio-inicial/Python - Módulos Mundo 03",
+    "last_opened_file_path": "C:/Users/famil/Documents/Projetos/Repositorio-inicial/Python - Módulos Mundo 03/ex.113/lib",
     "settings.editor.selected.configurable": "IntelliLang.Configuration"
   }
 }]]></component>
@@ -102,10 +104,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03\ex.113\lib" />
+      <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03\ex.113\lib\Arquivo" />
       <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03" />
       <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03\ex\113" />
       <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03\ex\109" />
-      <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03\109\utilidadesCeV" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -123,14 +125,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691935692874</updated>
-    </task>
-    <task id="LOCAL-00201" summary="Palpites para a MEGA SENA">
-      <option name="closed" value="true" />
-      <created>1698866716417</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1698866716417</updated>
     </task>
     <task id="LOCAL-00202" summary="Boletim com listas compostas">
       <option name="closed" value="true" />
@@ -516,7 +510,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706029495984</updated>
     </task>
-    <option name="localTasksCounter" value="250" />
+    <task id="LOCAL-00250" summary="Exercícios parcialmente feitos">
+      <option name="closed" value="true" />
+      <created>1706124707836</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1706124707838</updated>
+    </task>
+    <option name="localTasksCounter" value="251" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -584,7 +586,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Função que calcula área" />
     <MESSAGE value="Um print especial" />
     <MESSAGE value="Função de Contador" />
     <MESSAGE value="Função que descobre o maior" />
@@ -609,7 +610,8 @@
     <MESSAGE value="Exercício 114 completo e pequena correção do módulo dados" />
     <MESSAGE value="." />
     <MESSAGE value="Exercício 114 completo." />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercício 114 completo." />
+    <MESSAGE value="Exercícios parcialmente feitos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercícios parcialmente feitos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
