@@ -1,3 +1,4 @@
+from .Sistema import Cadastro
 
 cor = ['\033[30m', '\033[31m', '\033[32m', '\033[33m', '\033[34m', '\033[35m', '\033[36m', '\033[37m']
 
@@ -8,7 +9,7 @@ def Cabeçalho(msg):
     print('-' * 42)
 
 
-def Menu(Lista):
+def Menu():
     Cabeçalho('MENU PRINCIPAL')
     print(f'{cor[3]}1 - {cor[4]}Ver pessoas cadastradas')
     print(f'{cor[3]}2 - {cor[4]}Cadastrar nova Pessoa')
@@ -18,12 +19,14 @@ def Menu(Lista):
         escolha = int(input(f'{cor[2]}Sua Opção: \033[m'))
         if escolha == 1:
             Cabeçalho('PESSOAS CADASTRADAS')
-            print(Lista)
+            lista = open('Lista.txt', 'r')
+            print(lista.read())
+            lista.close()
         elif escolha == 2:
             Cabeçalho('CADASTRO')
             Cadastro()
         elif escolha == 3:
-            print('Obrigado e até a próxima!')
+            Cabeçalho('Obrigado e até a próxima!')
             break
         else:
             print(f'{cor[1]}Por favor digite um número válido\033[m')
