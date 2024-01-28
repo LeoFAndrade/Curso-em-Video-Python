@@ -7,18 +7,148 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5bace40-23a9-4dc0-8364-e99998914881" name="Changes" comment="Lista">
-      <change afterPath="$PROJECT_DIR$/Lista" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/Lista.txt" afterDir="false" />
+    <list default="true" id="e5bace40-23a9-4dc0-8364-e99998914881" name="Changes" comment="Exercício 115 completo + módulos e pequenas correções.&#10;Mundo 03 Completo.">
+      <change afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.020py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.021musica.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.034.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.035.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.070.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.071.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.098py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.105.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.106.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.109.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.110.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.001.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.001.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.002.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.002.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.003.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.003.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.004.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.004.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.005.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.005.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.006.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.006.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.007.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.007.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.008.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.008.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.009.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.009.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.010.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.010.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.011.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.011.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.012.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.012.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.013.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.013.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.014.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.014.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.015.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.015.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.016.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.016.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.017.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.017.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.018.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.018.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.019.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.019.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.020.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.021.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.021.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.022.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.022.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.023.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.023.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.024.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.024.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.025.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.025.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.026.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.026.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.027.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.027.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.028.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.028.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.029.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.029.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.030.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.030.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.031.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.031.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.032.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.032.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 01/ex.033.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 01/ex.033.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.034.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.035.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.036.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.036.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.037.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.037.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.038.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.038.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.039.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.039.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.040.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.040.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.041.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.041.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.042.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.042.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.043.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.043.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.044.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.044.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.045.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.045.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.046.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.046.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.047.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.047.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.048.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.048.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.049.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.049.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.050.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.050.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.051.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.051.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.052.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.052.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.053.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.053.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.054.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.054.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.055.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.055.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.056.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.056.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.057.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.057.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.058.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.058.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.059.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.059.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.060.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.060.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.061.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.061.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.062.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.062.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.063.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.063.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.064.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.064.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.065.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.065.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.066.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.066.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.067.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.067.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.068.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.068.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 02/ex.069.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 02/ex.069.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.070.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.071.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.072.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.072.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.073.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.073.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.074.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.074.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.075.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.075.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.076.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.076.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.077.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.077.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.078.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.078.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.079.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.079.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.080.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.080.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.081.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.081.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.082.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.082.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.083.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.083.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.084.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.084.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.085.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.085.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.086.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.086.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.087.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.087.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.088.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.088.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.089.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.089.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.090.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.090.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.091.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.091.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.092.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.092.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/ex.113.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/ex.113.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Arquivo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Sistema.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Sistema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.093.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.093.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.094.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.094.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.095.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.095.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.096.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.096.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.097.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.097.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.098.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.099.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.099.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.100.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.100.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.101.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.101.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.102.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.102.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.103.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.103.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Mundo 03/ex.104.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Mundo 03/ex.104.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.105.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.106.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.107.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.107.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.108.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.108.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.109/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.111/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.109/ex.109.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.111/ex.111.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.109/utilidadescev/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.111/utilidadescev/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.109/utilidadescev/dados/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.111/utilidadescev/dados/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.109/utilidadescev/moeda/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.111/utilidadescev/moeda/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.110/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.112/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.110/ex.110.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.112/ex.112.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.110/utilidadescev/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.112/utilidadescev/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.110/utilidadescev/dados/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.112/utilidadescev/dados/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.110/utilidadescev/moeda/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.112/utilidadescev/moeda/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.111.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.112.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.114.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/Lista.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.115/Lista.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.115/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/ex.113.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.115/ex.115.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.115/lib/Interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/Sistema.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.115/lib/Sistema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.113/lib/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python - Módulos Mundo 03/ex.115/lib/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +215,11 @@
     "Python.Interface.executor": "Run",
     "Python.Sistema.executor": "Run",
     "Python.__init__.executor": "Run",
+    "Python.ex.001.executor": "Run",
+    "Python.ex.002.executor": "Run",
+    "Python.ex.003.executor": "Run",
+    "Python.ex.011.executor": "Run",
+    "Python.ex.021.executor": "Run",
     "Python.ex.089.executor": "Run",
     "Python.ex.090.executor": "Run",
     "Python.ex.091.executor": "Run",
@@ -99,21 +234,22 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/famil/Documents/Projetos/Repositorio-inicial/Python - Módulos Mundo 03/ex.113/lib",
-    "settings.editor.selected.configurable": "IntelliLang.Configuration"
+    "last_opened_file_path": "C:/Users/famil/Documents/Projetos/Repositorio-inicial/Python - Mundo 01",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03\ex.110" />
       <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Mundo 01" />
+      <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03\ex.110" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03" />
       <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03\ex.113\lib" />
       <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03\ex.113\lib\Sistema" />
       <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03\ex.113" />
       <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03\ex.113\lib\Arquivo" />
-      <recent name="C:\Users\famil\Documents\Projetos\Repositorio-inicial\Python - Módulos Mundo 03" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -131,14 +267,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691935692874</updated>
-    </task>
-    <task id="LOCAL-00204" summary="Boletim com listas compostas&#10;&#10;Adicionado notas">
-      <option name="closed" value="true" />
-      <created>1699039449210</created>
-      <option name="number" value="00204" />
-      <option name="presentableId" value="LOCAL-00204" />
-      <option name="project" value="LOCAL" />
-      <updated>1699039449210</updated>
     </task>
     <task id="LOCAL-00205" summary="Dicionário em Python&#10;&#10;Refeito">
       <option name="closed" value="true" />
@@ -524,7 +652,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706376031518</updated>
     </task>
-    <option name="localTasksCounter" value="253" />
+    <task id="LOCAL-00253" summary="Exercício 115 completo + módulos e pequenas correções.&#10;Mundo 03 Completo.">
+      <option name="closed" value="true" />
+      <created>1706381732884</created>
+      <option name="number" value="00253" />
+      <option name="presentableId" value="LOCAL-00253" />
+      <option name="project" value="LOCAL" />
+      <updated>1706381732885</updated>
+    </task>
+    <option name="localTasksCounter" value="254" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -592,7 +728,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Função que descobre o maior" />
     <MESSAGE value="Funções para sortear e somar" />
     <MESSAGE value="Funções para votação" />
     <MESSAGE value="Função para Fatorial" />
@@ -617,7 +752,8 @@
     <MESSAGE value="Exercícios parcialmente feitos" />
     <MESSAGE value="Exercícios funcionando parcialmente" />
     <MESSAGE value="Lista" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lista" />
+    <MESSAGE value="Exercício 115 completo + módulos e pequenas correções.&#10;Mundo 03 Completo." />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercício 115 completo + módulos e pequenas correções.&#10;Mundo 03 Completo." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,11 +1,18 @@
-# Exercício Python 038: Escreva um programa que leia dois números inteiros e
-# compare-os. Mostrando uma mensagem na tela:
+# Exercício Python 036: Escreva um programa para aprovar o empréstimo bancário
+# para a compra de uma casa. Pergunte o valor da casa, o salário do comprador
+# e em quantos anos ele vai pagar. A prestação mensal não pode exceder 30% do
+# salário ou então o empréstimo será negado.
 
-num1 = int(input('Digite um número:'))
-num2 = int(input('Digite o segundo número:'))
-if num1 > num2:
-    print('O maior número é o primeiro!!!')
-elif num2 > num1:
-    print('O maior número é o segundo!!!')
-elif num1 == num2:
-    print('Ambos os valores são iguais!!!')
+x = '\033[33mAprovando Empréstimo\033[32m'
+print(f'\033[32m{x:=^40}\033[m')
+
+casa = float(input('Valor da casa: R$'))
+salario = float(input('Digite o salário do cliente: R$'))
+anos = int(input('Digite em quantos anos você pretende pagar:'))
+meses = anos * 12
+pagamento = (casa / meses)
+# A multiplicação por decimal facilita a conta.
+if pagamento > salario * 0.3:
+    print(f'Infelizmente você não pode obter o empréstimo, o valor do empréstimo:\033[31mR${pagamento:.2f}')
+else:
+    print(f'Empréstimo aprovado, Valor da prestação:\033[32mR${pagamento:.2f}')

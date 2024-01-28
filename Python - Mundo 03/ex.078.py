@@ -1,21 +1,14 @@
-# Exercício 080: Crie um programa onde o usuário possa digitar cinco valores numéricos e cadastre-os em uma lista, já na
-# posição correta de inserção (sem usar o sort()).
-# No final, mostre a lista ordenada na tela.
+# Exercício 078: Faça um programa que leia 5 valores numéricos e guarde-os em uma lista.
+# No final, mostre qual foi o maior e menor valor digitados e a s suas respectivas posições na lista.
 
-numeros = []
+valores = []  # Lista
+posmaior = posmenor = 0  # Variáveis
 
-for c in range(5):
+for count in range(0, 5):  # Repetindo a pergunta 5 vezes
+    valores.append(int(input('Digite um número: ')))  # Os valores digitados vão ser anexados a lista
 
-    num = int(input('Digite um número: '))
-    if c == 0 or num > numeros[-1]:  # Se o número digitado for maior que o primeiro, será adicionado na última
-        # posição da lista
-        numeros.append(num)
+posmaior = valores.index(max(valores))  # Pegando o maior valor da lista e encontrando a sua posição específica
+posmenor = valores.index(min(valores))  # E agora a posição do menor
 
-    else:
-        pos = 0  # Posição 0
-        while pos < len(numeros):
-            if num <= numeros[pos]:  # Se o número for menor ou igual à posição, ele será adicionado à posição
-                numeros.insert(pos, num)  # Adicionando na posição específica
-                break
-            pos += 1  # Avança +1 a posição
-print(f'Os números ordenados ficam na posição {numeros}')
+print(f'O maior valor é: \033[1;32m{max(valores)}\033[m na posição: \033[1;35m{posmaior+1}\033[m da lista'
+      f'\nO menor valor é: \033[1;31m{min(valores)}\033[m na posição: \033[1;35m{posmenor+1}\033[m da lista')

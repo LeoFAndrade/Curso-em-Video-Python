@@ -1,12 +1,14 @@
-# Exercício Python 048: Faça um programa que calcule a soma entre todos os
-# números ímpares que são múltiplos de três e que se encontram no intervalo de 1 até 500.
+# Exercício Python 046: Faça um programa que mostre
+# uma contagem regressiva na tela para o estouro de fogos de artifício, indo de 10 até 0, com
+# uma pausa de 1 segundo entre eles.
 
-soma = 0
-contador = 0
-for x in range(0, 501):  # Os números vão de 0 a 500
-    if x % 2 == 1:  # Aqui se calculará usando o resto da divisão, nesse caso oos números ímpares
-        if x % 3 == 0:  # A mesma coisa acima, porém usando para obter os números ímpares múltiplos de 3
-            soma += x
-            contador += +1
-print(f'A soma de todos os números ímpares divisíveis por três é:'
-      f' {soma}, O número de vezes que foi contado é {contador}')
+from time import sleep
+import emoji
+
+print('\033[35mContagem regressiva para os fogos!!!!\033[31m')
+# Usando for para iterar e range para a inversão da contagem
+for x in range(10, 0, -1):
+    # Usando de sleep para a contagem regressiva
+    sleep(1)
+    print(x)
+print(emoji.emojize("\033[31m:rocket:BUM BUM :fireworks: POW POW:rocket:"))

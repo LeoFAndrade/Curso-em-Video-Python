@@ -1,29 +1,17 @@
-# Exercício 087: Aprimore o desafio anterior, mostrando no final:
-# A) A soma de todos os valores pares digitados.
-# B) A soma dos valores da terceira coluna
-# C) O maior valor da segunda linha
+# Exercício 085: Crie um programa onde o usuário possa digitar sete valores numéricos e cadastre-os em uma lista única
+# que mantenha separados os valores pares e ímpares. No final, mostre os valores pares e ímpares em ordem crescente.
 
-matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-soma = somacol = maiorval = 0
+lista = [[], []]
 
-while True:
-    for linha in range(0, 3):
-        for coluna in range(0, 3):
-            matriz[linha][coluna] = int(input(f'Digite um valor para a posição [{linha}:{coluna}]: '))
-            if matriz[linha][coluna] % 2 == 0:
-                soma += matriz[linha][coluna]
+for x in range(0, 7):
+    num = int(input('Digite um número: '))
 
-            if matriz[linha][2]:
-                somacol += matriz[linha][2]
-
-            if coluna == 0:
-                maiorval = matriz[1][coluna]
-            if matriz[1][coluna] > maiorval:
-                maiorval = matriz[1][coluna]
-    break
-print(f'\033[1m[ {matriz[0][0]} ] [ {matriz[0][1]} ] [ {matriz[0][2]} ]\n'
-      f'[ {matriz[1][0]} ] [ {matriz[1][1]} ] [ {matriz[1][2]} ]\n'
-      f'[ {matriz[2][0]} ] [ {matriz[2][1]} ] [ {matriz[2][2]} ]')
-print(f'A soma de todos os pares digitados é: {soma}')
-print(f'A soma dos valores da terceira coluna é: {somacol}')
-print(f'O maior valor da segunda linha é: {maiorval}')
+    if num % 2 == 0:
+        lista[0].append(num)
+    else:
+        lista[1].append(num)
+print(f'Números pares: {lista[0]}')
+print(f'Números ímpares: {lista[1]}')
+lista = sum(lista, [])
+lista.sort()
+print(f'Os números em ordem crescente: {lista}')

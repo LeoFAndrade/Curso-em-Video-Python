@@ -1,35 +1,36 @@
-# Exercício 071: Crie um programa que simule o funcionamento de um caixa eletrônico. No início, pergunte ao usuário
-# qual será o valor a ser sacado (número inteiro) e o programa vai informar quantas cédulas de cada valor serão
-# entregues. OBS: Considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1.
+# Exercício 069: Crie um programa que leia a idade eo sexo de várias pessoas.
+# A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar.
+# No final, mostre:
+# A) Quantas pessoas tem mais de 18 anos
+# B) Quantos homens foram cadastrados.
+# C) Quantas mulheres tem menos de 20 anos
 
-# noinspection NonAsciiCharacters
-cedula = 50  # Começamos com a nota de maior valor
-print('=' * 30)
-print('{:^30}'.format('BANCO LEONARDO'))
-print('=' * 30)
-
-dinheiro = int(input('Que valor você quer sacar ? R$'))  # Entrada do usuário
-total = dinheiro  # Variável que vai converter para o valor do usuário
-totced = 0
-
+maioridade = contador = menoridade = 0
+x = 'CADASTRE UMA PESSOA'
 
 while True:
-    if total >= cedula:  # Se o total for igual ou maior que a cédula de 50, ele subtrairá o valor e a cédula
-        total -= cedula
-        totced += 1  # Será adicionado +1 ao contador a cada nota de R$50
+    print('\033[1;35m-=' * 20)
+    print(f'\033[1;33m{x:^40}')
+    print('\033[1;35m-=\033[32m' * 20)
 
-    else:  # Caso contrário, a variável vai se converter conforme o necessário
-        if totced > 0:  # Se o total de cédulas não for maior que 0, então o programa nem conta
-            print(f'Foi no total {totced} cédulas de R${cedula}')  # Aqui o print vai iterar sobre o resto do código
-        if cedula == 50:
-            cedula = 20  # Assim o programa vai comparando se cada nota é igual ou maior e vai adicionando +1 ao totced
-        elif cedula == 20:
-            cedula = 10
-        elif cedula == 10:
-            cedula = 1
-        totced = 0
-        if total == 0:
-            print('Volte sempre ao BANCO LEONARDO, TENHA UM BOM DIA!')
-            print('=' * 30)
-            break
-# Esse eu acabei ficando sem ideia realmente de como fazer e acabei copiando do professor tudo mesmo. 12/10/2023 16:19
+    idade = int(input('Idade: '))  # Entrada do usuário
+    sexo = ' '
+    if idade > 18:
+        maioridade += 1
+
+    while sexo not in 'MF':  # Usando a estrutura de repetição while, enquanto a condição não for atingida, se repetirá
+        sexo = str(input('Sexo[M/F]: ')).upper()[0]
+
+        if sexo == 'M':
+            contador += 1
+
+        if sexo == 'F' and idade < 20:
+            menoridade += 1
+    resp = ' '
+    while resp not in 'SN':  # A mesma lógica da variável 'sexo' acima
+        resp = str(input('Deseja continuar ? [S/N]: ')).upper()[0]
+    if resp == 'N':
+        break
+print(f'temos {maioridade} maiores de 18 anos!')
+print(f'Temos {contador} homens cadastrados no total!')
+print(f'Temos {menoridade} mulheres menores de 20 anos!')

@@ -1,24 +1,21 @@
-# Exercício 065: Crie um programa que leia vários números inteiros pelo teclado. No final da execução, mostre a média
-# entre todos os valores e qual foi o maior e o menor valores lidos.
-# O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores.
+# Exercício 063: Escreva um programa que leia um número n inteiro qualquer e mostre na tela os n primeiros elementos de
+# uma sequência de Fibonacci
 
-soma = quant = media = maior = menor = 0  # Variáveis
-resp = 's'  # Variável
+s = '\033[31mSequência de Fibonacci\033[32m'
+print(f'\033[32m{s:=^40}\033[m')
 
-while resp in 'Ss':  # Enquanto a resposta for "Sim" ou "S/s" o programa vai rodar
-    num = int(input('Digite um número: '))  # Entrada do usuário
-    quant += 1  # Toda vez que o usuário der uma entrada o contador soma +1
-    soma += num  # Os números digitados se somam na variável "soma"
-    media = soma / quant  # Com a soma e quantidade de entradas do usuário que são equivalentes, a média é calculada
+num = int(input('Digite quantos termos deseja exibir: '))  # Entrada do usuário
+n = 0  # Primeiro termo
+n2 = 1  # Segundo termo
+cont = 2  # Variável de controle
 
-    if quant == 1:
-        maior = menor = num  # Juntado todas as variáveis
-    else:
-        if num > maior:  # Se o número for "maior" que o "maior", ele se torna o "maior"
-            maior = num  # Maior
-        if num < menor:  # A mesma lógica de acima, porém com o menor valor
-            menor = num  # Menor
-    resp = str(input('Quer continuar? [S/N]: ')).upper()[0]  # O usuário tem a opção continuar o programa
+print(f'{n} ➙', end=' ') # Início da sequência
+while cont <= num:  # Enquanto a contagem for menor que "num" o programa vai repetir
+    termo = n + n2  # Somando os termos, "primeiro" + "penúltimo"
+    n2 = n  # O "penúltimo" termo se torna o "primeiro"
+    n = termo  # E o "penúltimo" se torna o último, para o "último" se tornar o "primeiro" termo, resultado da soma
+    cont += 1  # No final da repetição a contagem recebe + 1
 
-print(f'A média entre os números é de {media}')
-print(f'O maior número lido é {maior} e o menor lido é {menor}')
+    print(f'{termo} ➙', end=' ')  # Exibe os termos na tela de forma organizada
+print('Fim')  # Quando a repetição acabar, finaliza com a mensagem Fim
+

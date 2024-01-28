@@ -1,14 +1,10 @@
-# Exercício 078: Faça um programa que leia 5 valores numéricos e guarde-os em uma lista.
-# No final, mostre qual foi o maior e menor valor digitados e a s suas respectivas posições na lista.
+# Exercício 076: Crie um programa que tenha uma tupla única com nomes de produtos e seus respectivos preços na sequência
+# No final, mostre uma listagem de preços, organizando os dados em forma tabular.
 
-valores = []  # Lista
-posmaior = posmenor = 0  # Variáveis
-
-for count in range(0, 5):  # Repetindo a pergunta 5 vezes
-    valores.append(int(input('Digite um número: ')))  # Os valores digitados vão ser anexados a lista
-
-posmaior = valores.index(max(valores))  # Pegando o maior valor da lista e encontrando a sua posição específica
-posmenor = valores.index(min(valores))  # E agora a posição do menor
-
-print(f'O maior valor é: \033[1;32m{max(valores)}\033[m na posição: \033[1;35m{posmaior+1}\033[m da lista'
-      f'\nO menor valor é: \033[1;31m{min(valores)}\033[m na posição: \033[1;35m{posmenor+1}\033[m da lista')
+produtos = ('Arroz', 15.00, 'Carne', 25.00, 'Cereal', 2.00, 'Manteiga', 3.50, 'Café', 4.00,
+            'Pão', 1.50, 'Feijão', 7.00, 'Leite', 2.50, 'Batata', 4.00, 'Alface', 5.00)
+for pos in range(0, len(produtos)):
+    if pos % 2 == 0:
+        print(f'{produtos[pos]:.<40}', end='')
+    elif pos % 2 != 0:
+        print(f'R${produtos[pos]:.2f}')

@@ -1,19 +1,21 @@
-# Exercício 103: Faça um programa que tenha uma função chamada ficha(), que receba dois parâmetros opcionais: o nome de
-# um jogador e quantos gols ele marcou.
-# O programa deverá ser capaz de mostrar a ficha do jogador, mesmo que algum dado não tenha sido informado corretamente.
+# Exercício 101: Crie um programa que tenha uma função chamada voto() que vai receber como parâmetro o ano de nascimento
+# de uma pessoa, retornando um valor literal indicando se uma pessoa tem voto NEGADO, OPCIONAL ou OBRIGATÓRIO nas
+# eleições.
 
-def ficha(jog='', gol=0):
-    print(f'O Jogador {jog} fez {gol} gol(s) no campeonato!')
+from datetime import datetime
 
 
-# Programa Principal
-nome = str(input('Nome do Jogador: ')).strip()
-gols = str(input('Números de Gols: '))
-if gols.isnumeric():
-    gols = int(gols)
-else:
-    gols = 0
-if nome.strip() == '':
-    nome = '<desconhecido>'
+def voto(data):
+    idade = datetime.now().year - data
+    if 18 <= idade <= 70:
+        return f'Com {idade} anos: O VOTO É OBRIGATÓRIO'
 
-ficha(nome, gols)
+    if 16 <= idade < 18 or idade > 70:
+        return f'Com {idade} anos: O VOTO É OPCIONAL'
+
+    if idade < 16:
+        return f'Com {idade} anos: O VOTO É NEGADO'
+    return idade
+
+
+print(voto(int(input('Digite o ano de nascimento: '))))

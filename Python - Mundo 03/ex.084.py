@@ -1,22 +1,35 @@
-# Exercício 086: Crie um programa que crie uma matriz de dimensão 3x3 e preencha com valores lidos pelo teclado.
-# No final, mostre a matriz na tela, com a formatação correta.
+# Exercício 084: Faça um programa que leia nome e peso de vários pessoas, guardando tudo em uma lista. No final, mostre:
+# A) Quantos pessoas foram cadastradas.
+# B) Uma listagem com as pessoas mais pesadas.
+# C) Uma listagem com as pessoas mais leves.
 
-matriz = [[], [], []]
-
+lista = dados = []
+maior = menor = 0
+count = 0
+pesomaior = pesomenor = ''
 while True:
-    for n in range(0, 3):
-        numero = int(input(f'Digite um valor para a posição [0:{n}]: '))
-        matriz[0].append(numero)
+    dados.append(input('Digite o nome da pessoa: '))
+    dados.append(int(input('Digite o peso da pessoa: ')))
+    lista.append(dados[:])
 
-    for n in range(0, 3):
-        numero = int(input(f'Digite um valor para a posição [1:{n}]: '))
-        matriz[1].append(numero)
+    for x in lista:
 
-    for n in range(0, 3):
-        numero = int(input(f'Digite um valor para a posição [2:{n}]: '))
-        matriz[2].append(numero)
-    break
-
-print(f'\033[1m[ {matriz[0][0]} ] [ {matriz[0][1]} ] [ {matriz[0][2]} ]\n'
-      f'[ {matriz[1][0]} ] [ {matriz[1][1]} ] [ {matriz[1][2]} ]\n'
-      f'[ {matriz[2][0]} ] [ {matriz[2][1]} ] [ {matriz[2][2] } ]')
+        if len(dados) == 0:
+            maior = menor = dados[1]
+        else:
+            if dados[1] >= maior:
+                maior = dados[1]
+                pesomaior = dados[0]
+            if dados[1] <= maior:
+                menor = dados[1]
+                pesomenor = dados[0]
+        dados.clear()
+    resp = input('Deseja continuar ? [S/N]: ').upper()
+    count += 1
+    if resp in 'N':
+        break
+print(f'O total de pessoas cadastradas foram: {count}')
+print(f'O maior peso registrado foi de: {maior}KG')
+print(f'A pessoa de maior peso é: {pesomaior}')
+print(f'O menor peso registrado foi de: {menor}KG')
+print(f'A pessoa de menor peso é: {pesomenor}')

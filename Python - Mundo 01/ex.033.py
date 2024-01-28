@@ -1,13 +1,20 @@
-r1 = int(input('Digite o tamanho da primeira reta:'))
-r2 = int(input('Digite o tamanho da segunda:'))
-r3 = int(input('Digite o tamanho da última reta:'))
-# Analisaremos se as três retas podem formar um triângulo ou não.
-maior = r1
-if r2 and r3 > r1:
-    maior = r2
-if r3 and r2 > r1:
-    maior = r3
-if r1 and r3 > r2:
-    print('É possível formar um triângulo com estas retas')
-else:
-    print('Não é possível formar um triângulo com estas retas')
+# Exercício 033: Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
+
+n1 = int(input('Digite um número:'))
+n2 = int(input('Digite o segundo:'))
+n3 = int(input('Digite o terceiro:'))
+# Verificando o menor!
+# Pra facilitar, deixei o menor como n1
+menor = n1
+if n2 < n1 and n2 < n3:
+    menor = n2
+if n3 < n1 and n3 < n2:
+    menor = n3
+# Verificando agora o maior!
+maior = n1
+if n2 > n1 and n2 > n3:
+    maior = n2
+if n3 > n1 and n3 > n2:
+    maior = n3
+print(f'O menor número é {menor}')
+print(f'O maior número é {maior}')

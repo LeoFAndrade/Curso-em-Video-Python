@@ -1,36 +1,18 @@
-# Exercício 069: Crie um programa que leia a idade eo sexo de várias pessoas.
-# A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar.
-# No final, mostre:
-# A) Quantas pessoas tem mais de 18 anos
-# B) Quantos homens foram cadastrados.
-# C) Quantas mulheres tem menos de 20 anos
+# Exercício 067: Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitado pelo
+# usuário. O programa será interrompido quando o número solicitado for negativo
 
-maioridade = contador = menoridade = 0
-x = 'CADASTRE UMA PESSOA'
+num = 0  # Variável
 
-while True:
-    print('\033[1;35m-=' * 20)
-    print(f'\033[1;33m{x:^40}')
-    print('\033[1;35m-=\033[32m' * 20)
+print('Quer ver a tabuada de qual valor ? ')
+print('Digite um valor negativo para parar!')
 
-    idade = int(input('Idade: '))  # Entrada do usuário
-    sexo = ' '
-    if idade > 18:
-        maioridade += 1
+while num >= 0:  # Enquanto o número for maior que 0, o programa vai continuar
+    print(f'\033[31m---' * 20)
+    num = int(input('\033[32mDigite um número:'))  # Entrada do usuário
+    print(f'\033[31m---' * 20)
 
-    while sexo not in 'MF':  # Usando a estrutura de repetição while, enquanto a condição não for atingida, se repetirá
-        sexo = str(input('Sexo[M/F]: ')).upper()[0]
-
-        if sexo == 'M':
-            contador += 1
-
-        if sexo == 'F' and idade < 20:
-            menoridade += 1
-    resp = ' '
-    while resp not in 'SN':  # A mesma lógica da variável 'sexo' acima
-        resp = str(input('Deseja continuar ? [S/N]: ')).upper()[0]
-    if resp == 'N':
-        break
-print(f'temos {maioridade} maiores de 18 anos!')
-print(f'Temos {contador} homens cadastrados no total!')
-print(f'Temos {menoridade} mulheres menores de 20 anos!')
+    for x in range(1, 11):  # entre 1 e 10 vai ocorrer uma iteração sobre todos os elementos
+        if num < 0:  # Se o número for negativo, o programa para
+            break  # Parada
+        print(f'\n\033[32m{num} x {x} = \033[31m{num * x}')  # Multiplicação das tabuadas
+print('\033[32mPrograma tabuada encerrado. volte sempre.')

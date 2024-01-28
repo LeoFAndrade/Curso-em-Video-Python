@@ -1,42 +1,21 @@
-# Exercício Python 044: Elabore um programa que calcule o valor a ser pago
-# por um produto, considerando o seu preço normal e condição de pagamento:
+# Exercício Python 042: Refaça o DESAFIO 035 dos triângulos, acrescentando o
+# recurso de mostrar que tipo de triângulo será formado:
+print('\033[32m-=-' * 20), print('Analisador de triângulo 2.0'), print('-=-' * 20, '\033[m')
+azul = '\033[34m'
+x = '\033[m'
 
-# - à vista dinheiro/cheque: 10% de desconto
-# - à vista no cartão: 5% de desconto
-# - em até 2x no cartão: preço formal
-# - 3x ou mais no cartão: 20% de juros
-
-z = '\033[33mLojas Leonardo\033[32m'
-
-print(f'\033[32m{z:=^40}\033[m')
-
-compra = float(input('Digite o preço das compras: R$'))
-pagamento = int(input("\033[31mFORMAS DE PAGAMENTO\n\033[m"
-                      "\033[35m[ 1 ] À Vista no dinheiro/cheque\n"
-                      "[ 2 ] À vista no cartão\n"
-                      "[ 3 ] Em 2x no cartão\n"
-                      "[ 4 ] Em 3x ou mais no cartão\033[m "
-                      "\nDigite a sua escolha: "))
-if pagamento == 1:
-    conta = compra * 0.9
-    print(f'O preço ficou\033[32m R${conta:.2f}')
-elif pagamento == 2:
-    conta = compra * 0.95
-    print(f'O preço ficou \033[32mR${conta:.2f}')
-elif pagamento == 3:
-    conta = compra / 2
-    print(f'A compra foi parcelada em 2x de \033[32mR$ {conta:.2f}')
-elif pagamento == 4:
-    parcela = int(input('Quantas parcelas ? '))
-    conta = compra + (compra * 20 / 100)
-    total = conta / parcela
-    print(f'A compra foi parcelada em {parcela:}x de \033[32mR${total:.2f}\033[m COM juros de 20%')
-    print(f'A conta final ficou \033[32mR${conta:.2f}\033[m')
-
+r1 = int(input(f'Primeiro {azul}segmento{x}:'))
+r2 = int(input(f'Segundo {azul}segmento{x}:'))
+r3 = int(input(f'Terceiro {azul}segmento{x}:'))
+# Analisaremos se as três retas podem formar um triângulo ou não.
+if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
+    print('Pode formar um triângulo')
+    # Será analisado se pode ser um triângulo Equilátero
+    if r1 == r2 == r3:
+        print('Os segmentos formam um \033[33mEQUILÁTERO!')
+        if r1 != r2 != r3 != r1:
+            # Aqui será o Escaleno
+            print('Os segmentos formam um \033[33mESCALENO')
+            # E Aqui, simplificando é Isósceles
 else:
-    pagamento = int(input("Resposta inválida, por favor escolha uma das opções abaixo:\n"
-                          "[ 1 ] À Vista no dinheiro/cheque\n"
-                          "[ 2 ] À vista no cartão\n"
-                          "[ 3 ] Em 2x no cartão\n"
-                          "[ 4 ] Em 3x ou mais no cartão "
-                          "\n Digite a sua escolha: R$"))
+    print('Os segmentos formam um \033[33mISÓSCELES')

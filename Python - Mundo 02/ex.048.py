@@ -1,9 +1,12 @@
-# Exercício Python 050: Desenvolva um programa que leia seis números inteiros e mostre
-# a soma apenas daqueles que forem pares. Se o valor digitado for ímpar, desconsidere-o.
+# Exercício Python 048: Faça um programa que calcule a soma entre todos os
+# números ímpares que são múltiplos de três e que se encontram no intervalo de 1 até 500.
 
 soma = 0
-for x in range(0, 6):  # Aqui o programa vai perguntar a mesma coisa 6 vezes
-    numero = int(input('Digite um número: '))  # O usuário vai digitar os números
-    if numero % 2 == 0:
-        soma += numero
-print(f'A soma dos números pares resulta: {soma}')
+contador = 0
+for x in range(0, 501):  # Os números vão de 0 a 500
+    if x % 2 == 1:  # Aqui se calculará usando o resto da divisão, nesse caso oos números ímpares
+        if x % 3 == 0:  # A mesma coisa acima, porém usando para obter os números ímpares múltiplos de 3
+            soma += x
+            contador += +1
+print(f'A soma de todos os números ímpares divisíveis por três é:'
+      f' {soma}, O número de vezes que foi contado é {contador}')

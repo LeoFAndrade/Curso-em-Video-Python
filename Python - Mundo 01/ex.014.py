@@ -1,4 +1,5 @@
-dia = int(input('Por quantos dias o carro foi alugado ?'))
-km = float(input('Quantos Km foram rodados ?'))
-# Calculando o valor total a ser pago.
-pago = (dia * 60) + (km * 0.15)
+# Exercício 014: Escreva um programa que converta uma temperatura digitada em °C e converta para °F.
+
+c = float(input('Digite a temperatura em °C:'))
+# Convertendo a temperatura em Fahrenheit.
+print(f'A temperatura convertida em fahrenheit é de {(c*9)/5+32}°F')

@@ -1,9 +1,7 @@
-# Exercício Python 051: Desenvolva um programa que leia o primeiro termo e a razão de uma PA.
-# No final, mostre os 10 primeiros termos dessa progressão.
+# Exercício Python 049: Refaça o DESAFIO 009, mostrando a tabuada de um número
+# que o usuário escolher, só que agora utilizando um laço for.
 
-num = int(input('Digite o número: '))  # Pegando os valores respectivamente do usuário
-razao = int(input('Digite a razão: '))
-ultimo = num + (10 - 1) * razao   # Somando os termos
-for x in range(num, ultimo + razao, razao):  # Organizando a ordem aritmética
-    print(f'{x} ➙', end=' ')
-print('Fim')
+
+n = int(input('\033[32mDigite um número para saber a sua tabuada:'))  # Aqui o usuário digitará o número desejado
+for x in range(1, 11):  # O loop vai iterar de 1 a 10
+    print(f'\n\033[32m{n} x {x} = \033[31m{n * x}', end=' ')  # O resultado é calculado com input e loop e exibido

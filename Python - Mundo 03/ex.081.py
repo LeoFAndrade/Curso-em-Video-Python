@@ -1,18 +1,22 @@
-# Exercício 083: Crie um programa onde o usuário digite uma expressão qualquer que use parênteses.
-# Seu aplicativo deverá analisar se a expressão passada está com os parênteses abertos e fechados na ordem correto.
+# Exercício 081: Crie um programa que vai ler vários números e colocar em uma lista.
+# Depois disso, mostre:
+# A) Quantos números foram digitados.
+# B) A lista de valores, ordenada de forma decrescente.
+# C) Se o valor 5 foi digitado e está ou não na lista
 
 lista = []
-lista1 = str(lista).strip('[]')
-
-try:  # Fluxo de controle, permite testar e lidar com códigos, inclusive os que podem dar erro
-    expressao = str(input('Digite uma expressão matemática: '))
-    lista.append(expressao)  # Adicionando a expressão à lista
-
-    resposta = eval(expressao)  # Analisando se a expressão é Verdadeira ou Falsa
-
-    lista1 += expressao  # Concatenando os valores
-    if resposta:  # Se a resposta for válida, ele retorna a mensagem de validação
-        print(f'A expressão {expressao} é verdeira!')
-
-except SyntaxError:  # Se a sintaxe estiver incorreta, o programa retorna uma mensagem de erro.
-    print(f'A expressão {lista1} é falsa!')
+c = 0
+while True:
+    num = lista.append(int(input('Digite um número: ')))
+    resp = str(input('Deseja continuar ? [S/N]: ')).upper()
+    lista.sort(reverse=True)
+    c += 1
+    if resp in 'SN':
+        if resp == 'N':
+            print(f'Foram digitados {c} números!'
+                  f'\nA lista em ordem decrescente fica {lista}')
+            if 5 in lista:
+                print('O valor "5" foi encontrado na lista ')
+            else:
+                print('O valor "5" não foi encontrado na lista')
+                break

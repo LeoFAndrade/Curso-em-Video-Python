@@ -1,35 +1,19 @@
-# Exercício 106: Faça um mini-sistema que utilize o Interactive Help do Python. O usuário vai digitar o comando e o
-# manual vai aparecer. Quando o usuário digitar a palavra 'FIM', o programa se encerrará.
-# OBS: Use cores.
-
-c = ['\033[41m',  # Fundo vermelho - 0
-     '\033[42m',  # Fundo verde - 1
-     '\033[43m']  # Fundo amarelo - 2
-c0 = '\033[m'
-
-
-def Ajuda(com):
-    título('Acessando o manual do comando', 2)
-    help(com)
-
+# Exercício 104: Crie um programa que tenha a função leiaInt(), que vai funcionar de forma semelhante à função input()
+# do Python, só que fazendo a validação para aceitar apenas um valor numérico.
+# Ex: n = leiaInt('Digite um n')
 
 # noinspection NonAsciiCharacters
-def título(msg, cor=0):
-    tam = len(msg) + 4
-    print(f'{c[cor]}')
-    print('~' * tam)
-    print(f'  {msg}')
-    print('~' * tam)
+def leiaInt(número):
+    while True:
+        try:
+            print(número, end='')
+            número = int(input())
+            return número
+
+        except ValueError:
+            print('\033[1;31mERRO! Digite um número inteiro válido.\033[m')
 
 
 # Programa Principal
-comando = ''
-while True:
-    título('SISTEMA DE AJUDA PyHelp', 1)
-    comando = str(input('Função ou Biblioteca > '))
-    título(comando, 2)
-    if comando.upper() == 'FIM':
-        break
-    else:
-        Ajuda(comando)
-título('Até mais', 0)
+num = leiaInt('Digite um número: ')
+print(f'Você acabou de digitar o número {num}!')

@@ -1,6 +1,7 @@
+# Exercício 016: Crie um programa que leia um número Real qualquer pelo teclado e mostre na tela a sua porção inteira.
+
 import math
-# Calculando a hipotenusa.
-catetop = float(input(f'Comprimento do cateto oposto:'))
-catetoad = float(input(f'Comprimento do cateto adjacente:'))
-hipotenusa = math.hypot(catetop, catetoad)
-print(f'A hipotenusa mede: {hipotenusa:.2f}')
+# Truncando o valor decimal.
+numero = float(input('Digite um número decimal qualquer:'))
+truncado = math.trunc(numero)
+print(f'A porção inteira do número digitado {numero} é {truncado}')

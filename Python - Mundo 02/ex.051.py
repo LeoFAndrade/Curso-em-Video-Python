@@ -1,9 +1,9 @@
-# Exercício Python 053: Crie um programa que leia uma frase qualquer e
-# diga se ela é um palíndromo, desconsiderando os espaços.
+# Exercício Python 051: Desenvolva um programa que leia o primeiro termo e a razão de uma PA.
+# No final, mostre os 10 primeiros termos dessa progressão.
 
-pali = str(input('Digite algo: ')).strip().upper().replace(' ', '')
-if pali == pali[::-1]:  # Aqui reverterá a frase para analisar se é igual ou não
-    print(f'A palavra {pali} é palíndromo')
-else:
-    print(f'A palavra {pali} não é palíndromo')
-print(f'A palavra ao contrário fica assim: {pali[::-1]}')
+num = int(input('Digite o número: '))  # Pegando os valores respectivamente do usuário
+razao = int(input('Digite a razão: '))
+ultimo = num + (10 - 1) * razao   # Somando os termos
+for x in range(num, ultimo + razao, razao):  # Organizando a ordem aritmética
+    print(f'{x} ➙', end=' ')
+print('Fim')

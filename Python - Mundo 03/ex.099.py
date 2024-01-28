@@ -1,21 +1,21 @@
-# Exercício 101: Crie um programa que tenha uma função chamada voto() que vai receber como parâmetro o ano de nascimento
-# de uma pessoa, retornando um valor literal indicando se uma pessoa tem voto NEGADO, OPCIONAL ou OBRIGATÓRIO nas
-# eleições.
+# Exercício 099: Faça um programa que tenha uma função chamada maior(), que receba vários parâmetros com valores
+# inteiros. Seu programa tem que analisar todos os valores e dizer qual deles é o maior.
 
-from datetime import datetime
+from time import sleep
 
-
-def voto(data):
-    idade = datetime.now().year - data
-    if 18 <= idade <= 70:
-        return f'Com {idade} anos: O VOTO É OBRIGATÓRIO'
-
-    if 16 <= idade < 18 or idade > 70:
-        return f'Com {idade} anos: O VOTO É OPCIONAL'
-
-    if idade < 16:
-        return f'Com {idade} anos: O VOTO É NEGADO'
-    return idade
+print('-=-' * 15)
 
 
-print(voto(int(input('Digite o ano de nascimento: '))))
+def maior(*valores):
+    print('Analisando os valores passados...')
+    numero = valores
+    for numero in valores:
+        sleep(0.5)
+        print(numero, end=' ')
+    print(f'Foram informados {len(valores)} valores ao todo.\nO maior valor informado foi {max(valores)}')
+    print('-=-' * 15)
+
+
+maior(0, 4, 3, 2, 1)
+maior(1, 4, 6, 9, 10)
+maior(0)

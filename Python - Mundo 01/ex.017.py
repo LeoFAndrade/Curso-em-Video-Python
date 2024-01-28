@@ -1,9 +1,10 @@
+# Exercício 017: Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um
+# triângulo retângulo, calcule e mostre o comprimento da hipotenusa.
+
+
 import math
-angulo = float(input('Digite o Ã¢ngulo:'))
-# Calculando seno, cosseno e tangente respectivamente.
-SENO = math.sin(math.radians(angulo))
-print(f'O Ã‚ngulo de {angulo} tem o SENO de {SENO:.2f}')
-COSSENO = math.cos(math.radians(angulo))
-print(f'O COSSENO de {angulo} tem Ã© de {COSSENO:.2f}')
-TANGENTE = math.tan(math.radians(angulo))
-print(f'E a TANGENTE de {angulo} Ã© {TANGENTE:.2f}')
+# Calculando a hipotenusa.
+catetop = float(input(f'Comprimento do cateto oposto:'))
+catetoad = float(input(f'Comprimento do cateto adjacente:'))
+hipotenusa = math.hypot(catetop, catetoad)
+print(f'A hipotenusa mede: {hipotenusa:.2f}')

@@ -1,28 +1,22 @@
-# Exercício Python 039: Faça um programa que leia o ano de nascimento de um
-# jovem e informe, de acordo com a sua idade, se ele ainda vai se alistar ao
-# serviço militar, se é a hora exata de se alistar ou se já passou do tempo
-# do alistamento. Seu programa também deverá mostrar o tempo que
-# falta ou que passou do prazo.
+# Exercício Python 037: Escreva um programa em Python que leia um número inteiro
+# qualquer e peça para o usuário escolher qual será a base de conversão: 1 para
+# binário, 2 para octal e 3 para hexadecimal.
 
-# Usando da biblioteca date para fins de informação do tempo
-from datetime import date
-
-
-# Usando a data atual para calcular o tempo desde o nascimento
-atual = date.today().year
-data = int(input('Digite a data de nascimento:'))
-idade = atual - data
-saldo = 18 - idade
-# Classificando o alistante conforme a idade apresentada
-print(f'Quem nasceu em \033[34m{data}\033[m, tem \033[34m{idade} anos')
-if idade == 18:
-    print('\033[33mÉ hora de se alistar.')
-elif idade < 18:
-    ano = atual + saldo
-    print(f'\033[32mAinda falta {saldo} ano para o seu alistamento.')
-    print(f'\033[32mSeu alistamento será em {ano}')
-elif idade > 18:
-    print('\033[31mJá passou da hora se alistar.')
-    saldo = idade - 18
-    anos = atual - saldo
-    print(f'\033[31mSeu alistamento deveria ter sido no ano de {anos}')
+numero = int(input('Digite um número inteiro:'))
+print('''Escolha uma das bases de conversão:
+[ 1 ] Converter para BINÁRIO
+[ 2 ] Converter para OCTAL
+[ 3 ] Converter para HEXADECIMAL''')
+escolha = int(input('Digite a sua escolha:'))
+# O programa vai converter o número segundo a escolha.
+if escolha == 1:
+    print(f"O seu número ficará assim: {bin(numero).replace('0b','')}")
+    end = ''
+elif escolha == 2:
+    print(f'O seu número ficará assim: {oct(numero).replace("0o", "")}')
+    end = ''
+elif escolha == 3:
+    print(f'O seu número ficará assim: {hex(numero).replace("0x", "")}')
+    end = ''
+else:
+    print('Opção inválida')

@@ -1,26 +1,29 @@
-# Exercício Python 058:
-# Melhore o jogo do Desafio 28 onde o computador vai "pensar" em um número entre 0 e 10. Só que agora o jogador vai
-# tentar adivinhar até acertar, mostrando no final quantos palpites foram necessários para vencer.
+# Exercício Python 056: Desenvolva um programa que leia o nome, idade e sexo de 4 pessoas.
+# No final do programa, mostre: a média de idade do grupo, qual é o nome do homem mais velho
+# e quantas mulheres têm menos de 20 anos.
 
-from random import choice
+cont = 0
+soma = 0
+media = 0
+maior = 0
+nome1 = ''
+for x in range(1, 5):
+    nome = input(f'Digite o nome da {x}ª pessoa: ')
+    idade = int(input(f'Digite a idade {x}ª pessoa: '))
+    sexo = input(f'Digite o seu sexo {x}ª pessoa\n [ 1 ] Masculino\n [ 2 ] Feminino\n Digite a opção: ')
 
-c = 0  # Contador de jogadas
-listanum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # Essa lista será usada para a adivinhação
-PC = choice(listanum)  # O computador vai escolher aleatoriamente dentro da lista
+    soma = soma + idade
+    media = soma / x
 
-print('\033[35m-=-' * 20)
-print('\033[36mVamos brincar de adivinhar números!')
-print('\033[35m-=-\033[36m' * 20)
+    if sexo == '1' and idade > maior:
+        maior = idade
+        nome1 = nome
+    if sexo == '2' and idade < 20:
+        cont += 1
+print(f'A média de idade do grupo é: {media}')
+print(f'O homem mais velho é {nome1}')
+if cont == 0:
+    print('Não temos mulher(es) no grupo !')
 
-while True:  # Presumindo VERDADE o PC vai repetir até as condições serem atendidas
-    player = int(input('\033[36mDigite um número de 0 a 10: '))  # O jogador faz a sua jogada
-    c += 1  # Cada vez que o jogador fizer a sua jogada, o contador aumenta
-
-    if player < PC:  # Se a jogada for menor que a do PC, o jogador será orientado a jogar menor
-        print('\033[31mMais...')
-    elif player > PC:  # Se for maior, o jogador é orientado a jogar menor
-        print('\033[32mMenos...')
-    print('\033[35m-=-' * 20)
-    if player == PC:  # Se o jogador acertou, o programa finaliza com a contagem de quantas vezes tentadas
-        print(f'Você acertou ! Você precisou de {c} vezes para acertar')
-        break
+else:
+    print(f'Ao todo temos {cont} mulher(es) com menos de 20 anos')

@@ -1,50 +1,21 @@
-# Exercício 094: Crie um programa que leia nome, sexo e idade de várias pessoas, guardando os dados de cada pessoa em um
-# dicionário e todos os dicionários em uma lista. No final, mostre:
-# A) Quantas pessoas foram cadastradas.
-# B) A média de idade do grupo.
-# C) Uma lista com todas as mulheres.
-# D) Uma lista com todas as pessoas com idade acima da média.
+# Exercício 092: Crie um programa que leia nome, ano de nascimento e carteira de trabalho e cadastre-os (com idade)
+# em um dicionário se por acaso a CTPS for diferente de ZERO, o dicionário receberá também o ano de contratação e o
+# salário. Calcule e acrescente, além da idade, com quantos anos a pessoa vai se aposentar.
 
-dados = list()
-data = dict()
+from datetime import datetime
 
-soma = num = 0
+Pessoa = dict()
 
-while True:
-    data['nome'] = str(input('Nome: ')).capitalize()
-    while True:
-        data['sexo'] = str(input('Sexo: [M/F] ')).upper()
-        if data['sexo'] in 'FfMm':
-            break
-        print(f'Por favor, digite apenas M ou F')
-    data['idade'] = int(input('Digite a idade: '))
+Pessoa['Nome'] = str(input('Nome: '))
+Data = int(input('Data de nascimento: '))
+Pessoa['Idade'] = datetime.now().year - Data  # Calculando a idade pegando o ano atual e subtraindo o da data de nasc
+Pessoa['CTPS'] = int(input('Carteira de Trabalho [0 se não tiver]: '))
 
-    soma += data['idade']
-    dados.append(data.copy())  # Aqui será feito uma cópia do dicionário, que será anexado dentro da lista
-    while True:
-        escolha = str(input('Deseja continuar ? [S/N] ')).upper()
-        if escolha in 'SsNn':
-            break
-        print(f'Por favor, digite apenas S ou N')
-    if escolha == 'N':
-        break
-print('-=-' * 20)
-print(f'Foram cadastradas {len(dados)} pessoas !')
-media = soma / len(dados)  # Calculando a média
-print(f'A média de idade do grupo é de {media:5.2f}')
-print('As mulheres cadastradas foram: ')
-for p in dados:  # Para cada valor em dados, se o valor dentro da chave "sexo" for um F/f, será exibido o nome que
-    # atinge essa condição
-    if p["sexo"] in 'Ff':
-        print(p["nome"])
-print('Lista de pessoas que estão acima da média: ')
-for p in dados:  # Semelhante acima, porém se o valor da idade for maior do que a média, será exibido a lista
-    # ordenada
-    # do dado que atinge a condição
-    if p['idade'] > media:
-        print('    ')
-        for k, i in p.items():  # Para cada chave e valor dentro de 'idade', o programa exibirá o dicionário de
-            # forma ordenada
-            print(f'  {k} = {i}; ', end='')
-            print()
-print('<< ENCERRANDO >>')
+if Pessoa['CTPS'] != 0:  # Se o valor da CTPS for diferente de 0, o programa continua rodando
+    Pessoa['Contratação'] = int(input('Ano de contratação: '))
+    Pessoa['Salário'] = float(input('Salário: R$'))
+    Pessoa['Aposentadoria'] = Pessoa['Idade'] + (Pessoa['Contratação'] + 35) - datetime.now().year  # Aqui pega a idade
+    # faz adição com o ano de contratação com + 35 anos e subtrai com o ano atual
+print('-=-' * 15)
+for i, v in Pessoa.items():
+    print(f' - {i} tem o valor de {v}')

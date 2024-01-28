@@ -1,26 +1,22 @@
-# Exercício 093: Crie um programa que gerencie o aproveitamento de um jogador de futebol. O nome do jogador e quantas
-# partidas ele jogou. Depois vai ler a quantidade de gols feitos em cada partida. No final, tudo isso será guardado em
-# dicionário, incluindo o total de gols feitos durante o campeonato.
+# Exercício 091: Crie um programa onde 4 jogadores joguem um dado e tenham resultados aleatórios.
+# Guarde esses resultados em um dicionário. No final, coloque esse dicionário em ordem, sabendo que o vencedor tirou o
+# maior número no dado.
 
-dados = {}  # Dicionário
-gols = []  # Lista
+from random import randint
+from time import sleep
+from operator import itemgetter
 
-dados['Nome'] = str(input('Digite o nome do jogador: '))
-partidas = int(input(f'Quantas partidas {dados["Nome"]} jogou ? '))  # Número de partidas do jogador
+jogos = {'Jogador1': randint(1, 6),  # Cada item do dicionário vai gerar um número entre 1 e 6
+         'Jogador2': randint(1, 6),
+         'Jogador3': randint(1, 6),
+         'Jogador4': randint(1, 6)}
 
-for x in range(partidas):  # O programa vai perguntar quantos gols o jogador fez em cada partida
-    gols.append(int(input(f'Quantos gols no {x+1} jogo ? ')))  # Vai adicionar o valor em uma lista
-
-print('-=-' * 20)
-dados["gols"] = gols[:]  # Vai ser criado uma chave no dicionário aonde se vai armazenar a cópia da lista de gols
-dados["Total"] = sum(gols)  # Aqui vai ser somado todos os gols da lista
-print(dados)
-print('-=-' * 20)
-
-for i, v in dados.items():  # Aqui abaixo vai ser exibido cada índice e valor que há no dicionário
-    print(f'O campo {i} tem o valor de {v}')
-print('-=-' * 20)
-
-print(f'O jogador {dados["Nome"]} jogou {len(dados["gols"])} partidas!\n')
-for i, v in enumerate(dados["gols"]):  # O mesmo acima, porém com os dados da chave "gols"
-    print(f' => Na partida {i+1}, fez {v} gols!')
+for index, valor in jogos.items():  # Vai exibir uma mensagem para cada índice e valor dentro do dicionário
+    print(f'{index} tirou {valor} no dado')
+    sleep(1)
+ranking = sorted(jogos.items(), key=itemgetter(1), reverse=True)  # itemgetter ordena os dicionários, busca
+# E retorna um item de um objeto. Ex:(lista, dicionário, tupla)
+print('---' * 20)
+for i, v in enumerate(ranking):
+    print(f'{i+1}° lugar: ficou para {v[0]} com {v[1]} pontos')
+    sleep(1)

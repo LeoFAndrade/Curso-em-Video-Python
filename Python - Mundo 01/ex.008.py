@@ -1,5 +1,4 @@
-n = int(input('Digite um número para saber a sua tabuada:'))
-print(f'{n} x 1 = {n*1}'), print(f'{n} x 2 = {n*2}'), print(f'{n} x 3 = {n*3}'), print(f'{n} x 4 = {n*4}')
-print(f'{n} x 5 = {n*5}'), print(f'{n} x 6 = {n*6}'), print(f'{n} x 7 = {n*7}'), print(f'{n} x 8 = {n*8}')
-print(f'{n} x 9 = {n*9}'), print(f'{n} x 10 = {n*10}')
+# Exercício 008: Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
 
+m = float(input('Digite a distância em metros:'))
+print(f'A média de {m:.1f}m corresponde, {m*100:.0f}cm e {m*1000:.0f}mm')

@@ -1,39 +1,30 @@
-# Exercício 070: Crie um programa que leia o nome e o preço de vários produtos.
-# O programa deverá perguntar se o usuário vai continuar.
-# No final, mostre:
-# A) Qual é o total gasto na compra.
-# B) Quantos produtos custam mais de R$1000.
-# C) Qual é o nome do produto mais barato
+# Exercício 068: Faça um programa que jogue par ou ímpar com o computador.
+# O jogador só será interrompido quando o jogador PERDER, mostrando o total de vitórias consecutivas que ele conquistou
+# no final do jogo
 
-cont = conta = mil = menor = 0  # Variáveis de controle
-barato = ''
+from random import randint
+
+PC = randint(0, 11)  # O PC vai escolher algum número aleatório entre 0 e 10
+
+print('\033[1;35m-=-' * 20)
+print('\033[1;33mVamos jogar Par ou Ímpar!')
+print('\033[1;35m-=-\033[33m' * 20)
 
 while True:
-    print('===' * 15)
-    produto = str(input('Digite o nome do produto: ')).upper()
-    # noinspection NonAsciiCharacters
-    preço = float(input('Digite o preço: R$: '))
-    cont += 1
-    conta += preço
+    player = int(input('\033[1;33mDigite um valor: '))   # Entrada do jogador
+    player2 = str(input('Você quer ímpar ou par ? [I/P]')).upper()[0]
+    soma = player + PC  # Soma dos valores do jogador e PC
+    print(f'{player} + {PC} = {soma}\033[m')
 
-    if preço > 1000:
-        mil += 1
-
-    if cont == 1:
-        menor = preço
-        barato = produto
-    else:
-        if preço < menor:
-            menor = preço
-            barato = produto
-
-    resp = ' '
-    while resp not in 'SN':
-        resp = input('Deseja continuar ? [S/N] ').upper()
-        print('===' * 15)
-    if resp == 'N':
-        break
-
-print(f'O total gasto na compra foi de {conta:.2f}')
-print(f'Há {mil} produtos acima de R$:1000.00!')
-print(f'O produto mais barato é {barato} custa: R$: {menor:.2f}')
+    if player2 == 'P':  # Se o jogador escolher 'Par' as seguintes situações se apresentam abaixo
+        if soma % 2 == 0:  # Se a soma dividido por 2 dar '0', então o resultado é par.
+            print(f'\033[32mA soma total dá {soma}, portanto é Par.\nVOCÊ GANHOU\033[m')
+        else:  # Caso contrário, não é
+            print(f'\033[31mA soma total dá {soma}, portanto é Ímpar.\nVOCÊ PERDEU\033[m')
+            break
+    elif player2 == 'I':  # O jogador pode escolher 'Ímpar'
+        if soma % 2 != 0:  # Se o resultado diferir de '0' então é ímpar
+            print(f'\033[32mA soma total dá {soma}, portanto é Ímpar.\nVOCÊ GANHOU\033[m')
+        else:  # Caso contrário, então é par
+            print(f'\033[31mA soma total dá {soma}, portanto é Par.\nVOCÊ PERDEU\033[m')
+            break

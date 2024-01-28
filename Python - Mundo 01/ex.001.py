@@ -1,2 +1,3 @@
-nome = input('\033[32mQual Ã© o seu \033[33mnome\033[33m\033[32m ?')
-print(f'\033[32mOlÃ¡\033[m \033[33m{nome}\033[m\033[32m, seja bem muito bem vindo.')
+# Exercício 001: Crie um programa que escreva "Olá, Mundo!" na tela.
+
+print('Olá, Mundo!')

@@ -1,22 +1,19 @@
-# Exercício 081: Crie um programa que vai ler vários números e colocar em uma lista.
-# Depois disso, mostre:
-# A) Quantos números foram digitados.
-# B) A lista de valores, ordenada de forma decrescente.
-# C) Se o valor 5 foi digitado e está ou não na lista
+# Exercício 079: Crie um programa onde o usuário possa digitar vários valores numéricos e cadastre-os em uma lista.
+# Caso o número já existe lá dentro, ele não será adicionado.
+# No final, serão exibidos todos os valores únicos digitados, em ordem crescente.
 
-lista = []
-c = 0
+numeros = []
+
 while True:
-    num = lista.append(int(input('Digite um número: ')))
+    num = int(input('Digite um número: '))
+    if num not in numeros:  # Se o número digitado não estiver na lista, ele será adicionado
+        numeros.append(num)
+    else:
+        print('Valor duplicado! Digite outro!')  # Se for duplicado, o programa vai pedir se deseja continuar
+
     resp = str(input('Deseja continuar ? [S/N]: ')).upper()
-    lista.sort(reverse=True)
-    c += 1
     if resp in 'SN':
         if resp == 'N':
-            print(f'Foram digitados {c} números!'
-                  f'\nA lista em ordem decrescente fica {lista}')
-            if 5 in lista:
-                print('O valor "5" foi encontrado na lista ')
-            else:
-                print('O valor "5" não foi encontrado na lista')
-                break
+            break
+numeros.sort(reverse=True)
+print(f'Os números digitados são: {numeros}')

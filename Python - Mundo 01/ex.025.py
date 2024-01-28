@@ -1,5 +1,5 @@
-nome = input('Digite o seu nome:').title().split()
-# Programa que exibe o nome e o último nome.
-print(f'Bom te conhecer {nome[0]}!')
-print(f'Seu primeiro nome é "{nome[0]}"')
-print(f'E seu último nome é "{nome[-1]}"')
+# Exerc�cio 025: Crie um programa que leia o nome de uma pessoa e diga se ela tem "SILVA" no nome.
+
+nome = str(input('Digite o seu nome:').strip())
+# O Programa basicamente analisa se tem "Silva" em um nome.
+print(f'Tem Silva no seu nome ? {"Silva".lower() in nome}')

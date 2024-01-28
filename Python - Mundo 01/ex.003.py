@@ -1,5 +1,5 @@
-n = input('Digite qualquer coisa:')
-print('Tipo primitivo;', type(n)), print('É numérico ?', n.isnumeric()), print('É alfabético ?', n.isalpha())
-print('É alfanumérico ?', n.isalnum()), print('É decimal ?', n.isdecimal()), print('Está em maiúsculo ?', n.isupper())
-print('Está em minusculo ?', n.islower()), print('Está capitalizada ?', n.istitle())
-print('Só tem espaços ?', n.isspace())
+# Exercício 003: Crie um script Python que leia dois números e tente mostrar a soma entre eles.
+
+n1 = int(input('Digite um número:'))
+n2 = int(input('Digite outro número:'))
+print(f'A soma de {n1} + {n2} = {n1+n2}')

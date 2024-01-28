@@ -1,17 +1,18 @@
-# Exercício 085: Crie um programa onde o usuário possa digitar sete valores numéricos e cadastre-os em uma lista única
-# que mantenha separados os valores pares e ímpares. No final, mostre os valores pares e ímpares em ordem crescente.
+# Exercício 083: Crie um programa onde o usuário digite uma expressão qualquer que use parênteses.
+# Seu aplicativo deverá analisar se a expressão passada está com os parênteses abertos e fechados na ordem correto.
 
-lista = [[], []]
+lista = []
+lista1 = str(lista).strip('[]')
 
-for x in range(0, 7):
-    num = int(input('Digite um número: '))
+try:  # Fluxo de controle, permite testar e lidar com códigos, inclusive os que podem dar erro
+    expressao = str(input('Digite uma expressão matemática: '))
+    lista.append(expressao)  # Adicionando a expressão à lista
 
-    if num % 2 == 0:
-        lista[0].append(num)
-    else:
-        lista[1].append(num)
-print(f'Números pares: {lista[0]}')
-print(f'Números ímpares: {lista[1]}')
-lista = sum(lista, [])
-lista.sort()
-print(f'Os números em ordem crescente: {lista}')
+    resposta = eval(expressao)  # Analisando se a expressão é Verdadeira ou Falsa
+
+    lista1 += expressao  # Concatenando os valores
+    if resposta:  # Se a resposta for válida, ele retorna a mensagem de validação
+        print(f'A expressão {expressao} é verdeira!')
+
+except SyntaxError:  # Se a sintaxe estiver incorreta, o programa retorna uma mensagem de erro.
+    print(f'A expressão {lista1} é falsa!')

@@ -1,19 +1,21 @@
-# Exercício 104: Crie um programa que tenha a função leiaInt(), que vai funcionar de forma semelhante à função input()
-# do Python, só que fazendo a validação para aceitar apenas um valor numérico.
-# Ex: n = leiaInt('Digite um n')
+# Exercício 102: Crie um programa que tenha uma função fatorial() que receba dois parâmetro: o primeiro que indique o
+# número a calcular e o outro chamado show, que será um valor lógico (opcional) indicando se será mostrado ou não na
+# tela o processo de cálculo do fatorial.
 
 # noinspection NonAsciiCharacters
-def leiaInt(número):
-    while True:
-        try:
-            print(número, end='')
-            número = int(input())
-            return número
+def fatorial(número=1, show=False):
+    """ → Calcula o fatorial de um número.
+    :param número: O número a ser calculado
+    :param show: (opcional) Exibe ou não a conta (Vem 'False' por padrão)
+    :return: O valor do Fatorial de um número 'número'"""
 
-        except ValueError:
-            print('\033[1;31mERRO! Digite um número inteiro válido.\033[m')
+    fact = 1  #
+    for num in range(número, 0, -1):   # O programa começa com o número provido pelo usuário e vai regressando a cada um
+        fact *= num  # Cada número vai ser multiplicado e se tornar o novo resultado simultaneamente, até chegar à '1'
+        if show is True:  # O usuário tem a opção de optar em ver a conta
+            print(f'{num}', 'x ' if num > 1 else '= ', end='')
+    print(fact)  # O resultado do fatorial vai ser exibido
+    return fact  # O resultado vai ser retornado ao 'chamador'
 
 
-# Programa Principal
-num = leiaInt('Digite um número: ')
-print(f'Você acabou de digitar o número {num}!')
+fatorial(5, True)

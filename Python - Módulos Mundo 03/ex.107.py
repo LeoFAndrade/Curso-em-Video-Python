@@ -1,16 +1,13 @@
-# Exercício 109: Modifique as funções que foram criadas no desafio 107 para que elas aceitem um para que elas aceitem
-# um parâmetro a mais, informando se o valor retornado por elas vai ser ou não formatado pela função moeda(),
-# desenvolvida no desafio 108.
+# Exercício 107: Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(), diminuir(), dobro() e
+# metade(). Faça também um programa que importe esse módulo e use algumas dessas funções.
 
 from uteis.numeros import moeda
 
 print('~~~' * 20)
 print('Calculadora de preço')
 print('~~~' * 20)
-
 produto = int(input('Digite o total da compra de produtos R$: '))
-
-print(f'O dobro de {moeda.moeda(produto)} é {moeda.dobro(produto, True)} ')
-print(f'Aumentando 10% temos {moeda.aumentar(produto, 10, True)}')
-print(f'Reduzindo 20% temos {moeda.diminuir(produto, 20, True)}')
-print(f'A metade de {moeda.moeda(produto)} é {moeda.metade(produto, True)}')
+print(f'O dobro de {produto} é R$ {moeda.dobro(produto)} ')
+print(f'Aumentando 10% temos R$ {moeda.aumentar(produto, 10)}')
+print(f'Reduzindo 20%, temos R$ {moeda.diminuir(produto, 20)}')
+print(f'A metade de {produto} é R$ {moeda.metade(produto)}')

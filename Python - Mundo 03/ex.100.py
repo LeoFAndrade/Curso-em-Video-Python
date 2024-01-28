@@ -1,21 +1,28 @@
-# Exercício 102: Crie um programa que tenha uma função fatorial() que receba dois parâmetro: o primeiro que indique o
-# número a calcular e o outro chamado show, que será um valor lógico (opcional) indicando se será mostrado ou não na
-# tela o processo de cálculo do fatorial.
+# Exercício 100: Faça um programa que tenha uma lista chamada números e duas funções chamadas sorteia() e somaPar().
+# A primeira função vai sortear 5 números e vai colocá-los dentro da lista e a segunda função vai mostrar a soma entre
+# todos os valores PARES sorteados pela função anterior.
 
-# noinspection NonAsciiCharacters
-def fatorial(número=1, show=False):
-    """ → Calcula o fatorial de um número.
-    :param número: O número a ser calculado
-    :param show: (opcional) Exibe ou não a conta (Vem 'False' por padrão)
-    :return: O valor do Fatorial de um número 'número'"""
-
-    fact = 1  #
-    for num in range(número, 0, -1):   # O programa começa com o número provido pelo usuário e vai regressando a cada um
-        fact *= num  # Cada número vai ser multiplicado e se tornar o novo resultado simultaneamente, até chegar à '1'
-        if show is True:  # O usuário tem a opção de optar em ver a conta
-            print(f'{num}', 'x ' if num > 1 else '= ', end='')
-    print(fact)  # O resultado do fatorial vai ser exibido
-    return fact  # O resultado vai ser retornado ao 'chamador'
+from random import randint
+from time import sleep
+numeros = list()
 
 
-fatorial(5, True)
+def sorteia(lista):
+    for contador in range(0, 5):
+        n = randint(0, 10)
+        lista.append(n)
+        print(f'{n} ', end='')
+        sleep(0.3)
+    print('FIM')
+
+
+def somapar(lista):
+    soma = 0
+    for valor in lista:
+        if valor % 2 == 0:
+            soma += valor
+    print(f'Somando todos os valores pares da lista {lista}, resulta em: {soma} ', end='')
+
+
+sorteia(numeros)
+somapar(numeros)

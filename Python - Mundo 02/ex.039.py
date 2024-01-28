@@ -1,21 +1,28 @@
-# Exercício Python 041: A Confederação Nacional de Natação precisa de um programa que
-# leia o ano de nascimento de um atleta e mostre sua categoria, conforme a idade:
+# Exercício Python 039: Faça um programa que leia o ano de nascimento de um
+# jovem e informe, de acordo com a sua idade, se ele ainda vai se alistar ao
+# serviço militar, se é a hora exata de se alistar ou se já passou do tempo
+# do alistamento. Seu programa também deverá mostrar o tempo que
+# falta ou que passou do prazo.
 
-# Usando a biblioteca date para fins de informação sobre o tempo
+# Usando da biblioteca date para fins de informação do tempo
 from datetime import date
 
-# Calculando a partir do dia do nascimento até o dia atual
+
+# Usando a data atual para calcular o tempo desde o nascimento
 atual = date.today().year
-nasc = int(input('Digite a data de nascimento:'))
-idade = atual - nasc
-# Classificando o atleta conforme a idade atual
-if idade <= 9:
-    print('A categoria é: \033[34mMIRIM')
-elif idade <= 14:
-    print('A categoria é: \033[36mINFANTIL')
-elif idade <= 19:
-    print('A categoria é: \033[33mJUNIOR')
-elif idade <= 25:
-    print('A categoria é: \033[31mSÊNIOR')
-elif idade > 25:
-    print('A categoria é: \033[35mMASTER')
+data = int(input('Digite a data de nascimento:'))
+idade = atual - data
+saldo = 18 - idade
+# Classificando o alistante conforme a idade apresentada
+print(f'Quem nasceu em \033[34m{data}\033[m, tem \033[34m{idade} anos')
+if idade == 18:
+    print('\033[33mÉ hora de se alistar.')
+elif idade < 18:
+    ano = atual + saldo
+    print(f'\033[32mAinda falta {saldo} ano para o seu alistamento.')
+    print(f'\033[32mSeu alistamento será em {ano}')
+elif idade > 18:
+    print('\033[31mJá passou da hora se alistar.')
+    saldo = idade - 18
+    anos = atual - saldo
+    print(f'\033[31mSeu alistamento deveria ter sido no ano de {anos}')

@@ -1,21 +1,13 @@
-import random
-from time import sleep
-print('\033[1;32m-=-' * 20)
-print('\033[33mVamos brincar de adivinhar números!')
-print('\033[1;32m-=-' * 20)
-# O jogador começa escolhendo algum número de 0 a 5.
-numero = int(input('\033[33mDigite um número de 0 à 5:'))
-print('\033[0;32m-=-' * 20)
-listanum = [0, 1, 2, 3, 4, 5]
-PC = random.choice(listanum)
-# Aqui o programa vai escolher aleatoriamente qualquer dos números listados acima.
-print('\033[35mPROCESSANDO...')
-sleep(3)
-# O programa finaliza mostrando o resultado, e mostra uma mensagem diferente dependendo do resultado.
-print(f'\033[33mPensei no número: {PC}')
-if numero == PC:
-    print('\033[1;32mPerdi, você acertou!')
-else:
-    print('\033[1;31mVocê errou, eu ganhei! kkkk')
-print('\033[1;32 m-=-' * 20)
-# Consegui fazer sem muita ajuda kkkkkk tô feliz demais kkkkkk Dia: 30/08/2023 h:18:00+-
+# Exercício 026: Faça um programa que leia uma frase pelo teclado e mostre:
+# Quantas vezes aparece a letra "A".
+# Em que posição ela aparece a primeira vez.
+# Em que posição ela aparece a última vez.
+
+fr = input('Digite uma frase:').lower().strip()
+# Uma aplicação simples para analisar certas características sobre uma frase.
+frase = fr.count('a')
+letraA1 = fr.index('a')
+letraA2 = fr.rindex('a')
+print(f'A letra "A" aparece {frase} na frase')
+print(f'A primeira letra "A" apareceu primeiro na posição {letraA1}')
+print(f'E a ultima letra "A" aparece na posição {letraA2}')

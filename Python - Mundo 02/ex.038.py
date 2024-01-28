@@ -1,13 +1,11 @@
-# Exercício Python 040: Crie um programa que leia duas notas de um aluno e calcule sua média,
-# mostrando uma mensagem no final, de acordo com a média atingida:
+# Exercício Python 038: Escreva um programa que leia dois números inteiros e
+# compare-os. Mostrando uma mensagem na tela:
 
-nota1 = float(input('Digite a primeira nota do aluno:'))
-nota2 = float(input('Digite a segunda nota do aluno:'))
-media = (nota1 + nota2)/2
-print(f'A média de notas foi {media}')
-if media >= 7.0:
-    print('\033[32mParabéns você passou!!!')
-elif 5.0 <= media <= 6.9:
-    print('\033[33mVocê está de recuperação!!!')
-elif media < 5.0:
-    print('\033[31mVocê foi reprovado!!!')
+num1 = int(input('Digite um número:'))
+num2 = int(input('Digite o segundo número:'))
+if num1 > num2:
+    print('O maior número é o primeiro!!!')
+elif num2 > num1:
+    print('O maior número é o segundo!!!')
+elif num1 == num2:
+    print('Ambos os valores são iguais!!!')

@@ -1,14 +1,14 @@
-# Exercício 074: Crie um programa que vai gerar cinco números aleatórios e colocar em uma tupla.
-# Depois disso, mostre a listagem de números gerados e também indique o menor e o maior valor que estão na tupla.
+# Exercício 072: Crie um programa que tenha uma tupla totalmente preenchida com uma contagem por extenso, de zero até
+# vinte. Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostrá-lo por extenso.
 
-from random import randint
+extenso = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez',
+           'Onze', 'Doze', 'Treze', 'Quatorze', 'Quinze', 'Dezesseis', 'Dezessete', 'Dezoito',
+           'Dezenove', 'Vinte')  # Tupla
 
-numeros = randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10)
-
-print('Os números sorteados são: ', end='')
-while numeros in range(0, 5):
-    numeros = randint(0, 11)
-
-print(numeros, end=' ')
-print(f'\nO maior valor é: {max(numeros)}')
-print(f'O menor número é: {min(numeros)}')
+while True:  # Repetição infinita
+    numero = int(input('Digite um número de 0 a 20: '))  # Entrada do usuário
+    if 0 <= numero <= 20:  # Se o número for abaixo de 0 ou acima de 20, o programa imprime uma mensagem
+        break
+    print('Tente novamente,', end=' ')  # Se a condição de cima não se cumprir, o programa pede novamente até se cumprir
+print(f'O número digitado por extenso é {extenso[numero]}')  # O 'numero' dentro dos colchetes pega a localização do
+# item da tupla 'extenso'

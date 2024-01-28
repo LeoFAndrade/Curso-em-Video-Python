@@ -1,3 +1,6 @@
-m = float(input('Digite o valor disponível em reserva R$:'))
-print(f'R${m} pode comprar em dólar: US${m / 4.96:.2f}')
-# Obrigado Plano real e Presidentes da Sexta República Brasileira
+# Exercício 009: Faça um programa que leia um número inteiro qualquer e mostre na tela a sua tabuada.
+
+n = int(input('Digite um número para saber a sua tabuada:'))
+print(f'{n} x 1 = {n*1}'), print(f'{n} x 2 = {n*2}'), print(f'{n} x 3 = {n*3}'), print(f'{n} x 4 = {n*4}')
+print(f'{n} x 5 = {n*5}'), print(f'{n} x 6 = {n*6}'), print(f'{n} x 7 = {n*7}'), print(f'{n} x 8 = {n*8}')
+print(f'{n} x 9 = {n*9}'), print(f'{n} x 10 = {n*10}')

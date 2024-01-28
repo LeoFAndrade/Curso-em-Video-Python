@@ -1,3 +1,4 @@
-n1 = int(input('\033[32mDigite um número:'))
-n2 = int(input('\033[32mDigite outro número:'))
-print(f'\033[32mA soma de \033[33m{n1} + {n2}\033[33m =\033[34m {n1+n2}')
+# Exercício 002: Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas.
+
+nome = input('Qual é o seu nome ?')
+print(f'Olá {nome}, seja bem muito bem vindo!')

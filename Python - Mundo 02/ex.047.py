@@ -1,7 +1,5 @@
-# Exercício Python 049: Refaça o DESAFIO 009, mostrando a tabuada de um número
-# que o usuário escolher, só que agora utilizando um laço for.
+# Exercício Python 047: Crie um programa que mostre na tela todos os
+# números pares que estão no intervalo entre 1 e 50.
 
-
-n = int(input('\033[32mDigite um número para saber a sua tabuada:'))  # Aqui o usuário digitará o número desejado
-for x in range(1, 11):  # O loop vai iterar de 1 a 10
-    print(f'\n\033[32m{n} x {x} = \033[31m{n * x}', end=' ')  # O resultado é calculado com input e loop e exibido
+for x in range(2, 51, 2):
+    print(x, end=' ')

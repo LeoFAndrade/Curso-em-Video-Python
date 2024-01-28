@@ -1,11 +1,17 @@
-# Exercício Python 057: Faça um programa que leia o sexo de uma pessoa, mas só aceite os valores 'M' ou 'F'.
-# Caso esteja errado, peça a digitação novamente até ter um valor correto.
+# Exercício Python 055: Faça um programa que leia o peso de cinco pessoas.
+# No final, mostre qual foi o maior e o menor peso lidos.
 
-while True:  # Aqui presume a condição será cumprida, se não for ela vai se repetir
-    sexo = str(input('Digite o seu sexo (M/F): ')).strip().upper()  # O usuário deve digitar uma das opções
-    if sexo == 'M' or sexo == 'F':  # Aqui será analisado se cumpre uma das duas das condições acima
-        print(f'Sexo {sexo} registrado com sucesso')
-        break
-    else:
-        print('Valor inválido.')
-        
+cor = '\033[31mpeso\033[m'
+maior = 0
+menor = 0
+for x in range(1, 6):
+    peso = float(input(f'Digite o {cor} da {x}ª pessoa: '))
+    if x == 1:  # Aqui começara pela primeira pessoa, considerando ela simultaneamente a de maior e menor peso
+        maior = peso
+        menor = peso
+    elif peso > maior:  # Se outro valor for maior que o primeiro valor, então passa a ser considera o de maior peso
+        maior = peso
+    elif peso < menor:  # A mesma coisa acima, porém neste caso com o menor peso
+        menor = peso
+print(f'O maior peso lido é {maior}ª')
+print(f'O menor peso lido é {menor}ª')

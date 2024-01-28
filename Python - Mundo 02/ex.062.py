@@ -1,18 +1,20 @@
-# Exercício 064: Crie um programa que leia vários números inteiros pelo teclado.
-# O programa só vai parar quando o usuário digitar do valor 999, que é a condição de parada.
-# No final, mostre quantos números foram digitados e qual foi a soma entre eles
-# (Desconsiderando a flag)
+# Exercício Python 062: Melhore o DESAFIO 061, perguntando para o usuário se ele quer
+# mostrar mais alguns termos. O programa encerrará quando ele disser que quer mostrar 0 termos.
 
+num = int(input('Digite um número: '))  # Entrada do valor do primeiro termo usuário
+razao = int(input('Digite a razão: '))  # Entrada do valor da razão do usuário
+termo = int(input('Digite quantos termos da progressão exibir: '))  # Exibe a quantidade de termos de um P.A digitadas
 
-flag = 999  # flag
-cont = soma = 0   # Variável que vai agir como um operando
+cont = 0  # Variável de controle
+tot = 0  # Variável de controle
 
+while termo != 0:  # O programa vai repetir até "term" não se diferir de 0
+    tot = tot + termo  # O Total vai basicamente receber o valor de 10
 
-num = int(input('Digite um número (999 para parar): '))
-while num != 999:  # Enquanto o contador diferir de -1, o programa vai rodar
-    soma += num  # Somando os termos
-    num = soma  # Transformando o contador para se tornar a soma
-    cont += 1
-    num = int(input('Digite um número (999 para parar): '))
-    if num == 999:  # Se o usuário digitar 999, a condição é cumprida
-        print(f'Você digitou {cont} vezes, a soma total é de: {soma}')  # Com a condição cumprida é exibido a soma
+    while cont < tot:  # Enquanto o contador for menor que o total, o programa vai repetir
+        num = num + razao  # Somando o número a razão para calcular o P.A
+        cont += 1  # O Contador vai aumentar de acordo até atingir o total
+        print(f'{num} ➙', end=' ')
+
+    termo = int(input('Deseja continuar a P.A ?: '))  # O usuário tem a opção de continuar com a P.A se desejar
+print('Fim')

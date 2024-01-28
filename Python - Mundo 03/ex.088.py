@@ -1,15 +1,20 @@
-# Exercício 090: Faça um programa que leia nome e média de um aluno, guardando também a situação em um dicionário.
-# No final, mostre o conteúdo da estrutura na tela.
+# Exercício 088: Faça um programa que ajude um jogador da MEGA SENA a criar palpites. O programa vai perguntar quantos
+# jogos serão gerados e vai sortear 6 números entre 1 e 60 para cada jogo, cadastrando tudo em uma lista composta.
 
-aluno = {}
+import random
+from time import sleep
 
-aluno['Nome'] = str(input('Digite o nome do aluno: '))
-aluno['Média'] = float(input(f'Média de {aluno["Nome"]}: '))
-print(f'O Nome é {aluno["Nome"]}\nA Média é {aluno["Média"]}')
 
-if aluno['Média'] >= 7:
-    print('Situação é igual a \033[1mAprovado')
-elif 5 <= aluno['Média'] < 7:
-    print('Situação é igual a \033[1mRecuperação')
-else:
-    print('Situação é igual a \033[1mReprovado')
+print('===' * 15)
+print(f'\033[1m{"JOGO DA MEGASENA":^45}')
+print('===' * 15)
+
+while True:  # O programa vai rodar até terminar todas as condições
+    jogada = int(input('Quantos jogos você deseja sortear ? '))  # Input do usuário
+
+    for jog in range(0, jogada):  # O programa vai repetir quantas vezes o usuário desejou
+        dados = (random.sample(range(0, 61), 6))  # Sample vai pegar 6 números randomicamente de
+        # range entre 0 e 61 e depois adicionar a lista de dados
+        sleep(0.5)  # Pequeno intervalo de tempo
+        print(sorted(dados))  # Retorna a lista de forma separada uma da outra
+    break

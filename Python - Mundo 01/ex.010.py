@@ -1,4 +1,7 @@
-l = float(input('Digite a largura da parede:'))
-m = float(input('Agora digite a altura:'))
-print(f'A dimensão da parede é de {l:.1f}x{m:.1f} e a sua área é de {l*m:.1f}')
-print(f'Portanto você precisará de {(l*m)/2:.2f}l de tinta para pintar a parede')
+# Exercício 010: Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos Dólares ela
+# pode comprar.
+# Considere US$1,00 = 3,27
+
+m = float(input('Digite o valor disponível em reserva R$:'))
+print(f'R${m} pode comprar em dólar: US${m / 4.96:.2f}')
+# Obrigado Plano real e Presidentes da Sexta República Brasileira
